@@ -1,0 +1,42 @@
+##Structure of an HTML file#
+
+##What is XML and HTML##
+
+XML(Extensible Markup Language) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined by W3C's XML 1.0 Specification and by several other related specifications, all of which are free open standards. 
+
+##Applications of XML##
+
+Document formats using XML syntax include: RSS, Atom, SOAP, and XHTML
+
+##Root Element##
+
+Each XML document has exactly one single *root element*. It encloses all the other elements and is therefore the sole parent element to all the other elements. ROOT elements are also called PARENT elements. 
+
+###structure###
+
+```<parent>
+	<child>content</child>
+	<child attribute="att"/>
+   </parent>
+   ```
+
+###HTML's root element###
+
+`<html>` is the only root element for an HTML document. As the parent element `<html>` comes with two child elements `<head></head>` and `<body></body>`. Structures in such format.
+
+```
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+the `<title></title>` element indicated the title that goes on the tab for the HTML document.
+
+##Meta Tags##
+
+After 
