@@ -4,10 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.test {
+.images {
     float: left;
-    width: 300px;
-    height: 400px;
-    background-color: red;
     box-shadow: 10px 10px 5px #888888;
 }
