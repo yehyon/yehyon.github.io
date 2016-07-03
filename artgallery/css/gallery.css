@@ -1,4 +1,14 @@
-img {
-    max-width: 100%;
+body {
+    background-image: url("gallery.png");
     height: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.test {
+    float: left;
+    max-width: 300px;
+    max-height: 400px;
+    background-color: red;
+    box-shadow: 10px 10px 5px #888888;
 }
