@@ -1,0 +1,16 @@
+body {
+    background-image: url("../images/gallery.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+img {
+	color: #fff;
+    float: left;
+    max-width: 30%;
+    height: auto;
+    border: solid 3px #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
