@@ -6,13 +6,12 @@ body {
 
 
 img {
-	color: #fff;
     float: left;
-    max-width: 30%;
+    max-width: 26%;
     height: auto;
-    border: solid 3px #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    margin-top: 5%;
-    margin-left:2%;
+    border: solid 0.14em #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 8%;
+    margin-left:5%;
 }
 
