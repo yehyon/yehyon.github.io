@@ -1,14 +1,13 @@
 body {
-    background-image: url("gallery.png");
-    height: auto;
-    max-width: 100%;
-    position: relative;
+    background-image: url("../images/gallery.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .test {
     float: left;
-    max-width: 300px;
-    max-height: 400px;
+    width: 300px;
+    height: 400px;
     background-color: red;
     box-shadow: 10px 10px 5px #888888;
 }
