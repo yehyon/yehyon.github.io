@@ -6,6 +6,8 @@ body {
 
 
 img {
+	margin-top: 5%;
+	margin-left: 2%;
     float: left;
     max-width: 30%;
     height: auto;
