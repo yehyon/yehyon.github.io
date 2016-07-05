@@ -96,6 +96,7 @@ h6 {
     position: absolute;
     top: 22px;
     left: 85px;
+    opacity: .8;
 }
 
 .top-right {
@@ -129,9 +130,27 @@ h6 {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: red;
     height: 60px;
     width: 200px;
+}
+
+.bottom-left > h5 {
+    color: #fff;
+    position: absolute;
+    bottom: 22px;
+    left: 50px;
+    font-family: "HelveticaNeue-light";
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.setting {
+    position: absolute;
+    bottom: 20px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
+    opacity: .8;
 }
 
 .bottom-center {
@@ -147,11 +166,20 @@ h6 {
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: red;
     height: 60px;
     width: 200px;
 }
 
+.todo {
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+    color: rgba(255,255,255,.7);
+}
+
+.todo:hover {
+    color: #fff;
+}
 
 
 
