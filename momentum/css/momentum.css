@@ -101,11 +101,21 @@ h6 {
 
 .top-right {
     position: absolute;
-    background-color: red;
-    height: 60px;
-    width: 200px;
-    top: 0;
-    right: 0;
+    right: 20px;
+    top: 20px;
+}
+
+.degree {
+    font-family: "HelveticaNeue-medium";
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+.top-right > h5 {
+    font-variant: small-caps;
+    color: rgba(255,255,255,.7);
+    opacity: .8;
 }
 
 .center-first-row {
