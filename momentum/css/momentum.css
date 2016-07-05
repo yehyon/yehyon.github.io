@@ -43,12 +43,6 @@ h5 {
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
-h6 {
-    font-family: "HelveticaNeue-light";
-    font-size: 1rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
-}
-
 .background {
     background-image: url('../images/aurora.jpg');
     background-size: cover;
@@ -84,14 +78,6 @@ h6 {
     position: absolute;
     top: 22px;
     left: 20px;
-}
-
-.search {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 22px;
-    left: 85px;
 }
 
 .top-right {
