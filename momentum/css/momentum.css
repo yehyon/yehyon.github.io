@@ -43,12 +43,15 @@ h5 {
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
+<<<<<<< HEAD
 h6 {
     font-family: "HelveticaNeue-light";
     font-size: 1rem;
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
+=======
+>>>>>>> feea03f626c41574e04ca71111bacdf94eb13169
 .background {
     background-image: url('../images/aurora.jpg');
     background-size: cover;
@@ -86,6 +89,7 @@ h6 {
     left: 20px;
 }
 
+<<<<<<< HEAD
 .top-left > h5:hover {
     color: #fff;
 }
@@ -98,6 +102,8 @@ h6 {
     left: 85px;
 }
 
+=======
+>>>>>>> feea03f626c41574e04ca71111bacdf94eb13169
 .top-right {
     position: absolute;
     background-color: red;
