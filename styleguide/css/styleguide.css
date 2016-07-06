@@ -81,13 +81,13 @@ Titling Typography Rule
 ===============================*/
 
 .section-title-style {
-    margin-top: 72px;
+    margin-top: 96px;
     overflow: hidden;
+    color: #d2d2d2;
 }
 
 .inner-title-style {
-    padding-top: 72px;
-    overflow: hidden;
+    padding-top: 48px;
     padding-bottom: 12px;
 }
 
