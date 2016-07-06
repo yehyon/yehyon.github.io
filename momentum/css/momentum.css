@@ -1,3 +1,7 @@
+/*! momentum.css @ 2016, yehyon. */
+
+/** ------------------------------------------------------------------------
+ * Basic Style */
 html, body {
     height: 100%;
 }
@@ -12,60 +16,64 @@ body {
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
+/** ------------------------------------------------------------------------
+ * Typography Style */
 h1 {
     font-family: "HelveticaNeue-medium";
     font-size: 11.7rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 h2 {
     font-family: "HelveticaNeue-medium";
     font-size: 3.3rem;
     line-height: 2.8rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 h3 {
     font-family: "HelveticaNeue-light";
     font-size: 2.2rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 h4 {
     font-family: "HelveticaNeue-light";
     font-size: 1.1rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 h5 {
     font-family: "HelveticaNeue-medium";
     font-size: 1rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 h6 {
     font-family: "HelveticaNeue-light";
     font-size: 1rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 a {
     text-decoration: none;
 }
 
-.background {
-    background-image: url('../images/aurora.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+/** ------------------------------------------------------------------------
+ * App BG Style */
+.background-img {
     position: absolute;
     top: 0;
     bottom:0;
     right: 0;
     left: 0;
+    background-image: url('../images/aurora.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.content {
+.content-container {
     position: absolute;
     top: 0;
     bottom:0;
@@ -75,7 +83,7 @@ a {
     height: 100%;
 }
 
-.top-left {
+.links-search {
     position: absolute;
     height: 60px;
     width: 200px;
@@ -84,13 +92,13 @@ a {
     color: rgba(255,255,255,.7);
 }
 
-.top-left > h5 {
+.links-search > h5 {
     position: absolute;
     top: 22px;
     left: 20px;
 }
 
-.top-left > h5:hover {
+.links-search > h5:hover {
     color: #fff;
 }
 
@@ -103,7 +111,7 @@ a {
     opacity: .8;
 }
 
-.top-right {
+.weather-location {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -116,13 +124,13 @@ a {
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
-.top-right > h5 {
+.weather-location > h5 {
     font-variant: small-caps;
     color: rgba(255,255,255,.7);
     opacity: .8;
 }
 
-.center-first-row {
+.greeting-clock {
     width: 100%;
     position: absolute;
     top: 34.5%;
@@ -131,7 +139,7 @@ a {
     color: #fff;
 }
 
-.center-second-row {
+.create-todo {
     width: 100%;
     position: absolute;
     top: 73%;
@@ -140,7 +148,7 @@ a {
     color: #fff;
 }
 
-.bottom-left {
+.setting-imginfo {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -148,7 +156,7 @@ a {
     width: 200px;
 }
 
-.bottom-left > h5 {
+.setting-imginfo > h5 {
     color: #fff;
     position: absolute;
     bottom: 22px;
@@ -167,7 +175,12 @@ a {
     opacity: .8;
 }
 
-.bottom-center {
+
+a svg:hover #settings { 
+  fill: #fff;
+}
+
+.quote {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -176,7 +189,7 @@ a {
 }
 
 
-.bottom-right {
+.todo-list {
     position: absolute;
     right: 0;
     bottom: 0;
