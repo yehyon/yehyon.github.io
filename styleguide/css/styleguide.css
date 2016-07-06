@@ -2,6 +2,7 @@ html, body {
 	max-width: 1220px;
 	height: 100%;
 	margin: auto;
+	color: #303335;
 }
 
 /*===============================
@@ -75,25 +76,34 @@ div.main-content {
     float: right;
 }
 
-.section-title-style {
-    margin-top: 48px;
-    color: #000;
-}
+/*===============================
+Titling Typography Rule
+===============================*/
 
-.headings-typography {
-    margin-top: 30px;
+.section-title-style {
+    margin-top: 72px;
     overflow: hidden;
 }
+
+.inner-title-style {
+    padding-top: 72px;
+    overflow: hidden;
+    padding-bottom: 12px;
+}
+
+.section-container {
+    padding-bottom: 24px;
+    overflow: hidden;
+}
+
+/*===============================
+Typography Section Styling
+===============================*/
 
 .type-sample {
     float: left;
     width: 50%;
     box-sizing: border-box;
-}
-
-.inner-title-style {
-    padding-top: 72px;
-    color: #000;
 }
 
 .type-description {
@@ -102,3 +112,58 @@ div.main-content {
     box-sizing: border-box;
     color: #d2d2d2;
 }
+
+.headings-typography {
+    overflow: hidden;
+}
+
+/*===============================
+Color Section Styling
+===============================*/
+
+.color-box-container {
+    overflow: hidden;
+}
+
+.box {
+    float: left;
+    width: 250px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.box.one {
+    background-color: #FCB409;
+}
+
+.box.two {
+    background-color: #63A2FC;
+}
+
+.box.three {
+    background-color: #44CB83;  
+}
+
+.box.four {
+    background-color: #7171EF;
+}
+
+.box.five {
+    background-color: #FF5448;
+}
+
+.box.six {
+    background-color: #787F94;
+}
+
+
+
