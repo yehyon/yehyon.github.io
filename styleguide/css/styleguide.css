@@ -184,5 +184,47 @@ Color Section Styling
     background-color: #d9e0e9;
 }
 
+/*===============================
+List Style Section Styling
+===============================*/
+
+.ul-example {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+}
+
+.ol-example {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: decimal-leading-zero;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+}
+
+.dl-example {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: decimal-leading-zero;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+    display: block;
+}
+
+
+
 
 
