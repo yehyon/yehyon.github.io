@@ -32,13 +32,14 @@ html, body {
 	background-image: linear-gradient(180deg, #fff 70%, #fff1e2 99.9%);
 	width: 80px;
 	height: 50px;
-	text-shadow: 0 1px 2px rgba(255,255,255,0.9)
+	text-shadow: 0 1px 2px rgba(255,255,255,0.9);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .buttonset-movie-control > button:hover/*,
 .buttonset-movie-control > .on*/
  {
-	background-image: linear-gradient(180deg, #2b2d2f 0, #534d4a 90%);
+	background-image: linear-gradient(180deg, #534d4a 0, #534d4a 90%);
 	color: #000;
 	text-shadow: none;
 }
