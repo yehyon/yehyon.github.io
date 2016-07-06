@@ -1,0 +1,140 @@
+html, body {
+    width: 960px;
+    height: 100%;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    font-family: "AlrightSans-light";
+    font-size: 36px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: "AlrightSans-light";
+    font-size: 24px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+h3 {
+    color: #868686;
+    font-family: "AlrightSans-Regular";
+    font-size: 16px;
+    line-height: 25px;
+}
+
+h4 {
+    color: #868686;
+    font-family: "AlrightSans-Regular";
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+h5 {
+    color: #1f4ba5;
+    text-transform: uppercase;
+    font-family: "Helveticaneue-bold", sans-serif;
+    font-size: 12px;
+}
+
+.tripple {
+    float: left;
+    width: 75%;
+    height: 480px;
+    background-image: url('../images/tripple-content.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tripple-description {
+    width: 100%;
+    padding-left: 120px;
+    padding-top: 120px;
+}
+
+
+.half-single1 {
+    vertical-align: bottom;
+    float: right;
+    width: 240px;
+    height: 120px;
+    background-image: url('../images/side1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+.half-single1:hover {
+    border-left: 10px solid #1f4ba5;
+}
+
+.half-single2 {
+    float: right;
+    width: 240px;
+    height: 120px;
+    background-image: url('../images/side2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.half-single3 {
+    float: right;
+    width: 240px;
+    height: 120px;
+    background-image: url('../images/side3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.half-single4 {
+    float: right;
+    width: 240px;
+    height: 120px;
+    background-image: url('../images/side4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.double {
+    float: left;
+    width: 50%;
+}
+
+.double-description {
+    padding-top: 120px;
+    height: 240px;
+    width: 480px;
+    background-image: url('../images/double-content.png');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.single {
+    float: left;
+    width: 25%;
+}
+
+.single-txt1 {
+    height: 240px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-image: url('../images/single1.png');
+}
+
+.single-txt2 {
+    height: 240px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-image: url('../images/single2.png');
+}
+

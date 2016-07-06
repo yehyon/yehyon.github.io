@@ -49,6 +49,10 @@ h6 {
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
+a {
+    text-decoration: none;
+}
+
 .background {
     background-image: url('../images/aurora.jpg');
     background-size: cover;
