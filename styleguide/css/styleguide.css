@@ -1,5 +1,5 @@
 html, body {
-	max-width: 1220px;
+	max-width: 1120px;
 	height: 100%;
 	margin: auto;
 	color: #303335;
@@ -163,6 +163,25 @@ Color Section Styling
 
 .box.six {
     background-color: #787F94;
+}
+.box.seven {
+    background-color: #333741;
+}
+
+.box.eight {
+    background-color: #586077;
+}
+
+.box.nine {
+    background-color: #787F94;
+}
+
+.box.ten {
+    background-color: #bac2d0;
+}
+
+.box.eleven {
+    background-color: #d9e0e9;
 }
 
 
