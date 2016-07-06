@@ -1,0 +1,104 @@
+html, body {
+	max-width: 1220px;
+	height: 100%;
+	margin: auto;
+}
+
+/*===============================
+Typography Styling
+===============================*/
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight:800;
+    font-size: 3.8146em;
+    line-height: 1.18;
+    margin-bottom: 0.3933em;
+
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3.0517em;
+    line-height: 1.48;
+    margin-bottom: .4916em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.441em;
+    line-height: 1.85;
+    margin-bottom: .6146em;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.953em;
+    line-height: 1.54;
+    margin-bottom: .7681em;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5625em;
+    line-height: 1.92;
+    margin-bottom: .96em;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-bottom: 1.2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+}
+
+nav.sidebar {
+    float: left;
+	width: 25%;
+}
+
+div.main-content {
+    width: 75%;
+    float: right;
+}
+
+.section-title-style {
+    margin-top: 48px;
+    color: #000;
+}
+
+.headings-typography {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.type-sample {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.inner-title-style {
+    padding-top: 72px;
+    color: #000;
+}
+
+.type-description {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    color: #d2d2d2;
+}
