@@ -184,20 +184,20 @@ Color Section Styling
     border-radius: 4px 4px 0 0;
     text-align: center;
     line-height: 200px;
-    color: hsla(0, 0%, 100%, 0.50);
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.70);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
 .color-name {
     font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 800;
+    font-size: 0.9em;
+    font-weight: 400;
     text-align: center;
     line-height: 50px;
-    color: hsla(0, 0%, 70%, 1.00);
+    color: hsla(0, 0%, 30%, 0.70);
 }
 
 
