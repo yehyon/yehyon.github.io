@@ -266,6 +266,10 @@ th, td {
     font-family: 'Open Sans', sans-serif;
 }
 
+.first-table {
+    margin-bottom: 30px;
+}
+
 .first-table-th {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
