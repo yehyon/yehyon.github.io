@@ -9,20 +9,10 @@ html, body {
     position: relative;
 }
 
-.sidebar {
-    position: fixed;
-    width: 20%;
-    float: left;
-    margin-top: 105px;
-}
-
-.sidebar a {
-    text-decoration: none;
-}
-
 .main-content {
     width: 80%;
     float: right;
+    margin-bottom: 200px;
 }
 
 /*===============================
@@ -114,6 +104,29 @@ Titling Typography Rule
     padding-bottom: 24px;
     overflow: hidden;
 }
+
+/*===============================
+Sidebar Nav Styling
+===============================*/
+
+.sidebar {
+    position: fixed;
+    width: 20%;
+    float: left;
+    margin-top: 105px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #303335;
+}
+
+.sidebar a:hover {
+    color: #d2d2d2;
+}
+
 
 /*===============================
 Typography Section Styling
