@@ -92,6 +92,7 @@ Titling Typography Rule
 .section-title-style {
     margin-top: 96px;
     overflow: hidden;
+    border-bottom: 1px solid #d2d2d2;
     /* color: #d2d2d2; */
 }
 
@@ -113,7 +114,7 @@ Sidebar Nav Styling
     padding: 30px;
     position: fixed;
     float: left;
-    margin-top: 85px;
+    margin-top: 58px;
 /*    margin-left: 30px;
 */    box-sizing: border-box;
 }
@@ -126,7 +127,14 @@ Sidebar Nav Styling
 .sidebar a:hover {
     display: block;
     background-color: hsla(0, 0%, 82%, 0.2);
+}
 
+.sidebar-item {
+    padding-top: 27px;
+}
+
+.sidebar-item-bottom {
+    padding-top: 27px;
 }
 
 
@@ -159,21 +167,39 @@ Color Section Styling
     overflow: hidden;
 }
 
+.gray-box-frame {
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: hsla(0, 0%, 82%, 0.4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
 .box {
     float: left;
     width: 250px;
     height: 200px;
     box-sizing: border-box;
-    border-radius: 4px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    border-radius: 4px 4px 0 0;
     text-align: center;
     line-height: 200px;
-    color: #fff;
+    color: hsla(0, 0%, 100%, 0.50);
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-transform: uppercase;
 }
+
+.color-name {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-align: center;
+    line-height: 50px;
+    color: hsla(0, 0%, 70%, 1.00);
+}
+
 
 .box.one {
     background-color: #FCB409;
