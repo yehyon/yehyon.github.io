@@ -11,11 +11,10 @@ Typography Styling
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    font-weight:800;
+    font-weight: bolder;
     font-size: 3.8146em;
     line-height: 1.18;
     margin-bottom: 0.3933em;
-
 }
 
 h2 {
@@ -234,7 +233,7 @@ th, td {
     font-family: 'Open Sans', sans-serif;
 }
 
-th {
+.first-table-th {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     font-weight: 700;
@@ -245,7 +244,23 @@ th {
     background-color: rgba(210, 210, 210, 0.17);
 }
 
+.table-left-col {
+    text-align: left;
+    padding-left: 30px;
+}
 
+.table-right-col {
+    text-align: center;
+}
 
+.second-table-th {
+    border-bottom: 1px solid #000;
+}
 
+.border-bottom-dotted {
+    border-bottom: 1px dotted #d2d2d2;
+}
 
+.border-bottom-bold {
+    border-bottom: 1px solid #000;
+}
