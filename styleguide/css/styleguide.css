@@ -127,6 +127,7 @@ Sidebar Nav Styling
 .sidebar a:hover {
     display: block;
     background-color: hsla(0, 0%, 82%, 0.2);
+    outline: 15px solid hsla(0, 0%, 82%, 0.2)
 }
 
 .sidebar-item {
