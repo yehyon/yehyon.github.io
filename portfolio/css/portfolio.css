@@ -1,15 +1,16 @@
 .square {
     background-color: red;
-  outline: 3px solid white;
-  position: relative;
-  width: 50%;
+    outline: 10px solid white;
+    position: relative;
+    width: 50%;
+    float: left;
 }
 
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
 
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .content {
