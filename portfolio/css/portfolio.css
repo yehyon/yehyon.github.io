@@ -1,13 +1,26 @@
 .square {
     background-color: red;
-    outline: 10px solid white;
+    outline: 20px solid white;
     position: relative;
     width: 50%;
     float: left;
 }
 
-
 .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.rectangle {
+    background-color: red;
+    outline: 20px solid white;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.rectangle:after {
     content: "";
     display: block;
     padding-bottom: 100%;
@@ -92,6 +105,7 @@ body {
     background-size: 1px 24px;
 }
 
+
 .wrapper {
     max-width: 940px;
     /*height: 100%;*/
@@ -136,19 +150,6 @@ About Career Styling
 .about-career {
 }
 
-.second-card {
-    box-sizing: border-box;
-    float: left;
-    width: 48.5%;
-    height: 456px;
-    background-color: #ECEFF1;
-}
-.designer.second-card {
-    margin-right: 1.5%;
-}
-.engineer.second-card {
-    margin-left: 1.5%;
-}
 .timeline-card {
     box-sizing: border-box;
     padding-left: 80px;
@@ -165,6 +166,20 @@ About Career Styling
     width: 380px;
 }
 
+
+.second-card {
+    box-sizing: border-box;
+    float: left;
+    width: 48.5%;
+    height: 456px;
+    background-color: #ECEFF1;
+}
+.designer.second-card {
+    margin-right: 1.5%;
+}
+.engineer.second-card {
+    margin-left: 1.5%;
+}
 
 /*===============================
 Location Styling
