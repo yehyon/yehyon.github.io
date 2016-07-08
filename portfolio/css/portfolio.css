@@ -121,7 +121,6 @@ Page-Header & Nav Styling
 ===============================*/
 .top-nav-bar {
     box-sizing: border-box;
-    position: absolute;
     float: left;
     width: 100%;
     height: 72px;
