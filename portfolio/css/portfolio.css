@@ -134,7 +134,19 @@ About Career Styling
 .about-career {
 }
 
-
+.second-card {
+    box-sizing: border-box;
+    float: left;
+    width: 48.5%;
+    height: 456px;
+    background-color: #ECEFF1;
+}
+.designer.second-card {
+    margin-right: 1.5%;
+}
+.engineer.second-card {
+    margin-left: 1.5%;
+}
 .timeline-card {
     box-sizing: border-box;
     padding-left: 80px;
@@ -151,24 +163,6 @@ About Career Styling
     width: 380px;
 }
 
-
-.designer-card {
-    box-sizing: border-box;
-    margin-right: 1.5%;
-    float: left;
-    width: 48.5%;
-    height: 456px;
-    background-color: #ECEFF1;
-}
-
-.engineer-card {
-    box-sizing: border-box;
-    margin-left: 1.5%;
-    float: left;
-    width: 48.5%;
-    height: 456px;
-    background-color: #ECEFF1;
-}
 
 /*===============================
 Location Styling
