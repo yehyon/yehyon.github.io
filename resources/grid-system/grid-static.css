@@ -1,0 +1,97 @@
+/*Grid Container Module*/
+
+.container {
+	width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.show-grid,
+.container.show-grid.hover-hide-grid {
+    background: url(10-80-10-grid-underline.png) repeat;
+}
+
+.container.hover-hide-grid:hover {
+    background: none;
+}
+
+body.overlay-grid::after {
+    content: '';
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    min-height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(10-80-10-grid-underline.png) repeat;
+}
+
+body.overlay-grid::after, 
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+[class*="col-"] {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.col.one {
+    width: 60px;
+}
+
+.col.two {
+    width: 140px;
+}
+
+.col.three {
+    width: 220px;
+}
+
+.col.four {
+    width: 300px;
+}
+
+.col.five {
+    width: 380px;
+}
+
+.col.six {
+    width: 460px;
+}
+
+.col.seven {
+    width: 540px;
+}
+.col.eight {
+    width: 620px;
+}
+
+.col.nine {
+    width: 700px;
+}
+
+.col.ten {
+    width: 780px;
+}
+
+.col.eleven {
+    width: 860px;
+}
+
+.col.twelve {
+    width: 940px;
+}
+
+
