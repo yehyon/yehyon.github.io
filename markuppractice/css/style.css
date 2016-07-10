@@ -1,4 +1,4 @@
-.container {
+/*.container {
     height: 300px;
 }
 
@@ -9,4 +9,11 @@
 
 .row {
     margin-bottom: 24px;
+}*/
+
+
+.wrapper {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
 }

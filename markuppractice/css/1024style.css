@@ -1,4 +1,4 @@
-.container {
+/*.container {
     height: 300px;
 }
 
@@ -10,4 +10,195 @@
 
 .row {
     margin-bottom: 24px;
+}*/
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper {
+    position: relative;
+    width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*=========================
+Typography Styling
+=========================*/
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 3.8146em;
+    line-height: 1.18;
+    margin-bottom: 0.3933em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3.0517em;
+    line-height: 1.48;
+    margin-bottom: .4916em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.441em;
+    line-height: 1.85;
+    margin-bottom: .6146em;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.953em;
+    line-height: 1.54;
+    margin-bottom: .7681em;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5625em;
+    line-height: 1.92;
+    margin-bottom: .96em;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-bottom: 1.2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+}
+
+/*=========================
+Navigation Styling
+=========================*/
+
+
+.navigation {
+    float: left;
+    top:0;
+    height: 80px;
+    width: 100%; 
+}
+
+.right-side-nav {
+    float: right;
+}
+
+.menu {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    line-height: 80px;
+}
+
+
+/*=========================
+Intro Styling
+=========================*/
+
+.intro {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*=========================
+Career Card Styling
+=========================*/
+
+
+.career-cards {
+    float: left;
+    margin-top: 20px;
+}
+
+.card {
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid #000;
+    float: left;
+    width: 320px;
+    height: 320px;
+    background-color: #ffff;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*=========================
+Timeline Styling
+=========================*/
+
+
+.timeline {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.timeline-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 1000px;
+    height: 640px;
+    border:2px solid #000;
+}
+
+/*=========================
+Biography Styling
+=========================*/
+
+.large-card {
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid #000;
+    float: left;
+    width: 660px;
+    height: 660px;
+    background-color: #ffff;
+    position: relative;
+}
+
+
+
+
