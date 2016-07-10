@@ -1,0 +1,12 @@
+.container {
+    height: 300px;
+}
+
+.temp {
+    height: 24px;
+    background-color: #000;
+}
+
+.row {
+    margin-bottom: 24px;
+}
