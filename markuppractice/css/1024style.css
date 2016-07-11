@@ -169,6 +169,7 @@ Career Card Styling
 }
 
 .button:hover {
+    color: #787f94;
     background-color: #fff;
     border: 2px solid #787f94;
 }
