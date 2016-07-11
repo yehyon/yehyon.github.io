@@ -161,11 +161,16 @@ Career Card Styling
     color: #fff;
     background-color: #787f94;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.button:hover {
+    background-color: #fff;
+    border: 2px solid #787f94;
 }
 
 /*=========================
