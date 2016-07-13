@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Heartbeat</title>
+    <style>
+        body {
+            margin: 4.5rem;
+        }
+
+        .wrapper {
+            border-radius: 200px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FF9787;
+        }
+
+        .sprite-anim-demo {
+            border-radius: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            width: 400px;
+            background: url("../images/css-animation-sprite/heartbeat-sprite.png") no-repeat;
+            animation: ziglezigle steps(19) 2s infinite;
+        }
+
+        @keyframes ziglezigle {
+            0% {background-position-x: 0; }
+            100% {background-position-x: -7600px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sprite-anim-demo"></div>
+    </div>
+</body>
+</html>
