@@ -15,8 +15,7 @@
     background: none;
 }
 
-body.overlay-grid:hover::after {
-
+body.overlay-grid::after {
     content: '';
     position: absolute;
     z-index: 10000;
@@ -26,6 +25,13 @@ body.overlay-grid:hover::after {
     transform: translateX(-50%);
     background: url(1024-grid.png) repeat;
 }
+
+
+body.overlay-grid:hover::after {
+    content: '';
+    background: 0 0 0 0;
+}
+
 
 body.overlay-grid::after, 
 .container {

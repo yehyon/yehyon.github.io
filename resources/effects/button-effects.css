@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+.button {
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #939393;
+    padding: 0.65rem 0.85rem;
+    background: #ececec;
+    color: #122122;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.button.button-3d-right-bottom {
+    border-bottom: none;
+    box-shadow: 
+        1px 1px 1px #939393,
+        2px 2px 1px #939393,
+        3px 3px 1px #939393,
+        4px 4px 1px #939393,
+        5px 5px 1px #939393;
+}
+
+.button-round { border-radius: 3px; }
+.button-rounder { border-radius: 6px; }
+.button-roundest { border-radius: 12px; }
+
+button[class*="slide-"] {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #B8BD9F;
+    background: #B8BD9F;
+    color: #fff;
+}
+
+button[class*="slide-"]::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #909374;
+    transition: all 0.3s;
+}
+
+button[class*=slide-]:hover::after,
+button[class*=slide-]:focus::after {
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+button.slide-from-left::after {
+    right:100%;
+    left: -100%;
+    top:0;
+    bottom:0;
+}
+
+button.slide-from-right::after {
+    right:-100%;
+    left: 100%;
+    top:0;
+    bottom:0;
+}
+
+
+button.slide-from-bottom::after {
+    right: 0;
+    left: 0;
+    top: 100%;
+    bottom: -100%;
+}
+
+button.slide-from-top::after {
+    right: 0;
+    left: 0;
+    top: -100%;
+    bottom: 100%;
+}
+
+/*
+button[class*="slide-"] {
+    position: relative;
+    z-index: 1;
+    border: 2px solid #B8BD9F;
+    background: #B8BD9F;
+    color: #fff;
+}
+
+button[class*="slide-"]::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #909374;
+    transition: all 0.3s;
+}
+
+button[class*=slide-]:hover::after,
+button[class*=slide-]:focus::after {
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #E8E1C4;
+}
+
+button.slide-from-left::after {
+    right:100%;
+    left: 0%;
+    top:0;
+    bottom:0;
+}
+
+
+*/
+
+
+/*button grow*/
+
+.button-rounder {
+    border-radius: 6px;
+}
+
+
+button[class*="grow-"] {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #DB9186;
+    padding: 0.725em 0.9em;
+    background: #DE6897;
+    color: #fff;
+}
+
+button[class*="grow-"]::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0D949E;
+    transition: all 4s;
+}
+
+button[class*=grow-]:hover::before,
+button[class*=grow-]:focus::before {
+    transform: scaleX(1);
+}
+
+
+button.grow-rectangle::before {
+    transform: scaleX(0);
+}
+
+button.grow-elipsis::before {
+    transform: scaleX(0);
+}
+
+button.grow-circle::before {
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    transform: scale(0);
+}
+
+button.grow-circle:hover::before,
+button.grow-circle:focus::before {
+    transform: scale(1.6);
+}
+
+button.grow-skew:hover::before,
+button.grow-skew:focus::before {
+    left: -20%;
+    right:-20%;
+}
+
+button.grow-skew::before {
+    left: 50%;
+    right: 50%;
+    transform: skewX(-45deg);
+}
+
+button.grow-spin::before {
+    transform: rotate(-180deg) scale(0);
+}
+
+button.grow-spin:hover::before,
+button.grow-spin:focus::before {
+    transform: rotate(0deg) scale(1);
+}
+
+.ghost {
+    position: relative;
+    top:-250;
+    z-index: 1000;
+    transform-origin: 10px 10px;
+    transform: translateY(-113px) scale(0.5) rotate(41deg);
+    animation: holdOn 4000ms cubic-bezier(0.4, 0, 1, 1) 0ms infinite alternate;
+}
+
+@keyframes holdOn {
+    0% {
+        transform: translateY(-113px) scale(0.5) rotate(20deg);
+    }
+    50% {
+        transform: translateY(-113px) scale(0.5) rotate(80deg);
+    }
+    100% {
+        transform: translateY(-113px) scale(0.5) rotate(20deg);
+    }
+}
+
+.ghost:hover {
+    position: relative;
+    top:-250;
+    z-index: 1000;
+    transform-origin: center center;
+    transform: scale(1) rotate(0deg);
+}
+
+

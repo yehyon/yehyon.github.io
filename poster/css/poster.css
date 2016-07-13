@@ -1,0 +1,99 @@
+
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #8073d5;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500vh;
+}
+.overlay::before {
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 63) 50%);
+  background-size: cover;
+}
+
+
+.wrapper {
+	margin-top: 6rem;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 6rem;
+}
+
+
+.poster { 
+	box-shadow: -14px 0px 41px -2px rgba(0,0,0,0.63);
+	width: 100%;
+	background-size: cover;
+	background-image: url(../images/paper.png);
+	background-repeat: no-repeat;
+}
+
+.poster-container {
+	padding-top: 7vh;
+	margin-right: 15%;
+	margin-left: 15%;
+	width: 70%;
+	text-align: justify;
+}
+
+[class*="text-"] {
+	display: inline-block;
+	width: 31%;
+	font-family:'BM JUA','배달의민족 주아',sans-serif;
+	font-size: 18vw;
+	font-weight: 800;
+	line-height: 19vw;
+	/* text-align: justify; */
+}
+
+.image-container {
+	width: 100%;
+}
+
+.image {
+	margin-top: 20px;
+	width: 56%;
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
+.align-last-justify {
+	width: 20rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+	font-weight: 900;
+	font-size: 6rem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.container {
+    width: 960px;
+    overflow: hidden;
+}
+
+.navigation {
+    float: left;
+    height: 80px;
+    background-color: #d2d2d2;
+}
+
+.intro {
+    float: left;
+    height: 480px;
+}
+
+
+.side-selection {
+    height: 120px;
+}
+
+.middle-selection {
+    float: left;
+    height: 240px;
+}

@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    padding-bottom: 2px;
+    padding-bottom: 0.125rem;
+    border-bottom: 1px solid;
+    border-bottom-width: 0.0625rem solid;
+}
+
+.fade-bg {
+    vertical-align: bottom;
+    padding: 0.25em 0.375em;
+    transition: all 0.25s;
+    border-bottom: none;
+}
+
+.fade-bg.round {
+    border-radius: 0.1875rem;
+}
+
+.fade-bg:hover,
+.fade-bg:focus {
+    color: #fff;
+    background-color: #3498db;
+}
+
+a[class*="slide-"] {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    padding: 0.06em 0.12em;
+    border-bottom: none;
+    vertical-align: bottom;
+}
+
+a[class*="slide-"]::after {
+    content: attr(data-linktext);
+    position: absolute;
+    width: 100%;
+    background: #1f74bf;
+    color: #fff;
+    transition: all 0.25s;
+    text-align: center;
+}
+
+a.slide-from-left::after {
+    left: -100%;
+}
+
+a.slide-from-left:hover::after,
+a.slide-from-left:focus::after {
+     left: 0;
+}
+
+
+a.slide-from-right::after {
+    right: -100%;
+}
+
+a.slide-from-right:hover::after,
+a.slide-from-right:focus::after {
+     right: 0;
+}
+
+a.slide-from-top::after {
+    top: -100%;
+    position: absolute;
+    left: 0;
+}
+
+a.slide-from-top:hover::after,
+a.slide-from-top:focus::after {
+     top: 0;
+}
+
+
+.fade-underline {
+    border-bottom: 2px solid transparent;
+    transition: all .25s ease;
+}
+
+
+.fade-underline:hover,
+.fade-underline:focus {
+    border-bottom-color: #3498db;
+}
+
+a[class*="underline-"] {
+    position: relative;
+    border-bottom: none;
+    vertical-align: bottom;
+}
+
+a[class*="underline-"]::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-bottom: 2px solid currentcolor;
+    transition: all 0.3s;
+}
+/*
+a[class*="underline-"] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+a[class*="underline-"]::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    width: 100;
+    border-bottom: 2px solid currentcolor;
+    transition: all 0.3s;
+}
+
+*/
+
+a.underline-from-left::before {
+    left: 0;
+    right: 100%;
+}
+
+a.underline-from-left:hover::before,
+a.underline-from-left:focus::before {
+    left: 0;
+    right: 0;
+}
+
+
+
+a.underline-from-right::before {
+    left:100%;
+    right: 0;
+}
+
+/*meaning left and right would be on the same
+spot of the line thus no bottom border
+*/
+a.underline-from-right:hover::before,
+a.underline-from-right:focus::before {
+    left: 0;
+    right: 0;
+}
+
+/*0 and 0 means the axis existing on the opposite
+end of content thus bottom-border becoming 100% 
+of the content
+*/
+
+a.underline-from-center::before {
+    left:50%;
+    right: 50%;
+}
+
+a.underline-from-center:hover::before,
+a.underline-from-center:focus::before {
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
