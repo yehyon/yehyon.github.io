@@ -8,6 +8,15 @@
     <link rel="stylesheet" type="text/css" href="../resources/initialization/normalize.css">
     <link rel="stylesheet" type="text/css" href="../resources/grid-system/grid-fluid(flexible).css">
     <style>
+
+    .use-multi-columns h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+        -webkit-column-span: all;
+        -moz-column-span: all;
+        column-span: all;
+    }
+
     .column-container {
         max-width: 56.25rem;
         margin: 3rem auto;
@@ -48,9 +57,9 @@
         -webkit-column-gap: 1.5rem;
         -moz-column-gap: 1.5rem;
         column-gap: 1.5rem;
-        -webkit-column-rule: 1px solid #d2d2d2;
-        -moz-column-rule: 1px solid #d2d2d2;
-        column-rule: 1px solid #d2d2d2;
+        -webkit-column-rule: 1px dotted #d2d2d2;
+        -moz-column-rule: 1px dotted #d2d2d2;
+        column-rule: 1px dotted #d2d2d2;
     }
 
     .use-multi-columns p {
@@ -81,6 +90,7 @@
         </div>
     </div>
     <div class="column-container use-multi-columns">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum placeat ad facere vel.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim ipsum harum aliquid facilis iure non ipsam dignissimos ad maiores quis, repudiandae debitis ducimus! Nisi, magni tempora deserunt aliquid saepe assumenda accusamus ullam natus illum, velit.</p>
             <p>Veniam dolorum perspiciatis, labore modi asperiores facilis. Nemo quisquam, quis vitae, odit harum eaque commodi, labore assumenda obcaecati libero aspernatur sit. Amet numquam non velit, quasi similique fuga veniam eveniet, incidunt odit iusto sunt.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim ipsum harum aliquid facilis iure non ipsam dignissimos ad maiores quis, repudiandae debitis ducimus! Nisi, magni tempora deserunt aliquid saepe assumenda accusamus ullam natus illum, velit.</p>
