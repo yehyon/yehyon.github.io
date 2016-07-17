@@ -1,0 +1,115 @@
+.logo {
+    position: fixed;
+    left: 70px;
+    top: 18px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+}
+
+a[class*="menu-"] {
+    padding-bottom: 22px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.menu-item:first-child::before {
+    content: '';
+    position: absolute;
+    margin-left: 15px;
+    top: 0px;
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+}
+
+.menu-item:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-left: -15px; */
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+}
+
+.header {
+	height: 100px;
+    width: 100%;
+}
+
+.navbar-top {
+    height: 37px;
+    background-color: #fff;
+}
+
+.samsung-logo {
+    width: 160px;
+}
+
+.navbar-bottom {
+    padding-right: 70px;
+    height: 63px;
+    background-color: #3e4448;
+    line-height: 57px;
+}
+
+
+a[class*="underline-"] {
+    position: relative;
+    border-bottom: none;
+    vertical-align: bottom;
+}
+
+a[class*="underline-"]::after {
+    content: '';
+    width: 100%;
+    /* display: block; */
+    position: absolute;
+    top: 23px;
+    left: 0;
+    border-bottom: 4px solid currentcolor;
+    transition: all 0.3s;
+}
+
+a.underline-from-bottom::after {
+    /* bottom: 0; */
+    /* top: 100%; */
+}
+
+a.underline-from-bottom:hover::after,
+a.underline-from-bottom:focus::after {
+    bottom: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
