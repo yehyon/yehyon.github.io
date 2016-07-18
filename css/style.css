@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 body {
-	font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    border: 4px solid #FF7971;
+    font-family: 'Raleway', sans-serif;
     height: 100vh;
     background-color: #F3FDFF;
 }
@@ -114,7 +116,7 @@ a[class*="miniline-"]::before {
     content: '';
     position: absolute;
     top: 100%;
-    border-bottom: 2px solid #FF705B;
+    border-bottom: 2px solid #FF7971;
     transition: all 0.3s;
 }
 
@@ -133,7 +135,7 @@ a.miniline-from-left:focus::before {
 
 a[class*="underline-"] {
     overflow: hidden;
-    color: #FF705B;
+    color: #FF7971;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -146,7 +148,7 @@ a[class*="underline-"]::before {
     display: inline-block;
     position: absolute;
     /* top: 100%; */
-    border-bottom: 5px solid #FF705B;
+    border-bottom: 5px solid #FF7971;
     transition: all 0.3s;
 }
 
