@@ -114,7 +114,7 @@ a[class*="miniline-"]::before {
     content: '';
     position: absolute;
     top: 100%;
-    border-bottom: 2px solid #FDBCB4;
+    border-bottom: 2px solid #FF705B;
     transition: all 0.3s;
 }
 
@@ -133,7 +133,7 @@ a.miniline-from-left:focus::before {
 
 a[class*="underline-"] {
     overflow: hidden;
-    color: #FDBCB4;
+    color: #FF705B;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -146,7 +146,7 @@ a[class*="underline-"]::before {
     display: inline-block;
     position: absolute;
     /* top: 100%; */
-    border-bottom: 5px solid #FDBCB4;
+    border-bottom: 5px solid #FF705B;
     transition: all 0.3s;
 }
 
