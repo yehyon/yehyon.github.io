@@ -74,7 +74,7 @@ header {
 .nav-item {
     letter-spacing: .1em;
     line-height: 120px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     float: left;
     margin-right: 32px;
@@ -89,7 +89,7 @@ header {
 
 
 .intro {
-    padding-top: 100px;
+    /* padding-top: 120px; */
     /* z-index: -100; */
     position: absolute;
     box-sizing: border-box;
@@ -98,7 +98,7 @@ header {
     width: 100%;
     color: #232B2D;
     top: 50%;
-    transform: translateY(-60%);
+    transform: translateY(-55%);
 }
 
 a[class*="miniline-"] {
@@ -144,7 +144,7 @@ a[class*="underline-"]::before {
     display: inline-block;
     position: absolute;
     /* top: 100%; */
-    border-bottom: 4px solid #85FF91;
+    border-bottom: 6px solid #85FF91;
     transition: all 0.3s;
 }
 
@@ -152,7 +152,7 @@ a.underline-from-left::before {
     /* left: 0; */
     /* right: 100%; */
     left: -100%;
-    top: 94%;
+    top: 90%;
     width: 100%;
 }
 
