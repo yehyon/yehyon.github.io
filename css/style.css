@@ -55,12 +55,17 @@ h6 {
 header {
         z-index: 999999;
         position: fixed;
-        /* width: 100%; */
         left: 0;
         right: 0;
 }
 
-.navigation {/* width: 100%; */height: 120px;/* top:0; */background-color: #fff;/* z-index: 100; */}
+.navigation {/* width: 100%; */
+    height: 120px;/* top:0; */
+    background-color: #fff;/* z-index: 100; */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .right-nav {
     float: right;
@@ -93,7 +98,7 @@ header {
     width: 100%;
     color: #232B2D;
     top: 50%;
-    transform: translateY(-54%);
+    transform: translateY(-60%);
 }
 
 a[class*="miniline-"] {
