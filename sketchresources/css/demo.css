@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 375px;
+    margin: 30px auto;
+}
+
+.demo-button {
+    border:none;
+height: 60px;
+width: 200px;
+background: #0066FF;
+border-radius: 4px;
+font-family: Helvetica;
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+}
