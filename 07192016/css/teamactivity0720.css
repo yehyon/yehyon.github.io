@@ -1,0 +1,80 @@
+@charset "utf-8"
+
+html {
+	width: 100%;
+	background: #003652;
+}
+
+body {
+	width: 100%;
+	background: #003652;
+	background-image: url('../media/sea.png');
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+}
+
+.intro h2 {
+	font-size: 32px;
+	font-weight: 300;f
+}
+
+.intro p {
+	font-size: 32px;
+}
+
+.intro {
+	height: 540px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.outline {
+	height: 44px;
+	width: 178px;
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+.responsive {
+	background-color: #003652;
+
+}
+
+
+[class*="unit-"] {
+	float: left;
+	height: 250px;
+	box-sizing: border-box;
+	border: 1px solid white;
+}
+
+[class*="unit-"] {
+	float: left;
+}
+
+@media (min-width: 900px)
+ {
+	[class*="box-isolate"] {
+	    margin-right: -100%;
+	}
+	.single-row-square {
+	height: 250px;
+	}
+	.unit-l-2-10 { width: 20%; }
+	.isolate-order-1 { margin-left: calc(10% * 0); }
+	.isolate-order-2 { margin-left: calc(10% * 2); }
+	.isolate-order-3 { margin-left: calc(10% * 4); }
+	.isolate-order-4 { margin-left: calc(10% * 7); }
+	.isolate-order-5 { clear: left; margin-left: calc(10% * 0); }
+	.isolate-order-6 { margin-left: calc(10% * 2); }
+	.isolate-order-7 { margin-left: calc(10% * 14); }
+ }

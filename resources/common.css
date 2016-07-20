@@ -22,9 +22,30 @@ img.blank-bottom + * {
   overflow: hidden;
 }
 
+/* 배경 이미지에 적용되는 Fluid Image*/
+
 img.flex-img {
   width: 100%;
   height: auto;
+}
+
+img.keep-original-scale {
+  max-width: 100%;
+}
+
+/* 배경 이미지에 적용되는 Fluid BG Image*/
+.flex-media-3-4 {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-media-9-16 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
 }
 
 img.horizontal-center-img {
