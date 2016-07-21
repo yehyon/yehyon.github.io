@@ -5,8 +5,8 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin-left: auto;
+/*    max-width: 1200px;
+*/    margin-left: auto;
     margin-right: auto;
 }
 
@@ -19,7 +19,11 @@ body {
     [class*=single] { height: 250px; width: 100%;}
     [class*=double] { height: 250px; width: 100%;}
     .flex { width: 100%; float: left;}
-    .flex-items { box-sizing: border-box; border: 1px solid #fff; float: left; }
+    .flex-items { 
+        box-sizing: border-box; 
+        border: 1px solid #fff; 
+        float: left; 
+    }
     .unit-s-1-2 { width: 50%; }
 
 }
