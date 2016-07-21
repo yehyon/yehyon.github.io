@@ -1,6 +1,7 @@
 
 body {
     background-color: #000;
+    color: #fff;
 }
 
 .wrapper {
@@ -15,7 +16,8 @@ body {
 
 
 @media (max-width: 900px) {
-    [class*=row] { height: 250px; width: 100%;}
+    [class*=single] { height: 250px; width: 100%;}
+    [class*=double] { height: 250px; width: 100%;}
     .flex { width: 100%; float: left;}
     .flex-items { box-sizing: border-box; border: 1px solid #fff; float: left; }
     .unit-s-1-2 { width: 50%; }
