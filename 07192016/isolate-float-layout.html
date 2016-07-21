@@ -39,11 +39,27 @@
     .grid *:nth-child(3) {background: #FFF8DC;}
     .grid *:nth-child(4) {background: #FFE1E0;}
 
+    body { margin: 0; }
+    header, footer { height: 100px; }
+    header { background: #ff0; }
+    footer { background: #feae09; }
+    main {
+      background-color: #A5B009;
+      display: flex;
+      border: 10px solid #111;
+      /*height: 400px;*/
+    }
+    section { height: 500px; order: 2; background: #1179fe; flex-grow: 1; flex-basis: 300px;}
+    aside { flex-shrink: 0; height: 200px;}
+    .side-A { order: 1; background: #b8b8b8; width: 200px; }
+    .side-B { align-self: flex-end; order: 3; background: #652cbc; width: 200px; }
+    .side-C { order: 1; flex-wrap:wrap;}
+
     </style>
 </head>
 
 <body>
-    <div class="grid-container show-grid">
+    <div class="grid-container">
         <div class="grid">
             <div class="box box-float">1</div>
             <div class="box box-float">2</div>
@@ -58,6 +74,14 @@
         </div>
     </div>
 
+  <header>header</header>
+  <main>
+    <section>section</section>
+    <aside class="side-A">aside A</aside>
+    <aside class="side-B">aside B</aside>
+    <aside class="side-C">aside C</aside>
+  </main>
+  <footer>footer</footer>
 </body>
 
 </html>
