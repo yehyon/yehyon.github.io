@@ -13,10 +13,12 @@ $bold: 700
 
 
 .navigation
+  height: $baseline * 3
   width: 100%
   a
     color: #fff
     text-decoration: none
+  display: flex
 
 .icon
   float: left
@@ -31,6 +33,9 @@ $bold: 700
   .logo
     img
       top: ( $baseline * 5 ) - 4px
+  .navigation
+    height: $baseline
+    display: block
   .navigation-left
     float: left
     padding-right: 1.25rem
