@@ -46,6 +46,9 @@ body {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-image: url(../indurge_assets/header-bg.png);
+  background-size: contain;
 }
 
 .s-single-row {
