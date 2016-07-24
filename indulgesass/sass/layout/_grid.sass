@@ -1,0 +1,39 @@
+$baseline: 21px
+$breakpoint: 700px
+
+body
+  background-color: #003652
+
+.wrapper
+  max-width: 1180px
+  margin-left: auto
+  margin-right: auto
+
+
+.s-single-row
+  height: $baseline * 8
+
+.s-double-row
+  height: $baseline * 23
+
+[class*=row]
+  width: 100%
+
+.unit-s-1-2
+  width: 50%
+
+@media (min-width: $breakpoint)
+  .l-single-row
+    height: $baseline * 12
+  .l-double-row
+    height: $baseline * 24
+  .unit-1-2
+    width: 50%
+  .unit-2-6
+    width: unquote("calc(100%/3)")
+  .unit-4-6
+    width: unquote("calc(200%/3)")
+  .unit-2-10
+    width: 20%
+  .unit-6-10
+    width: 60%

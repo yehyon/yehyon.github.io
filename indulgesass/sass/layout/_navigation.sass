@@ -1,0 +1,41 @@
+$baseline: 21px
+$bold: 700
+
+.logo-container
+  height: 10 * $baseline
+
+.logo
+  img
+    position: absolute
+    transform: translateX(50%)
+    right: 50%
+    top: ( $baseline * 3 ) - 4px
+
+
+.navigation
+  width: 100%
+  a
+    color: #fff
+    text-decoration: none
+
+@media (min-width: $breakpoint)
+  .logo-container
+    height: 11 * $baseline
+  .logo
+    img
+      top: ( $baseline * 5 ) - 4px
+  .navigation-left
+    float: left
+    padding-right: 1.25rem
+    a
+      &:hover
+        font-weight: $bold
+  .navigation-right
+    float: right
+    padding-left: 1.25rem
+    a
+      &:hover
+        font-weight: $bold
+
+
+
