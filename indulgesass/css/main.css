@@ -108,6 +108,15 @@ body {
   text-decoration: none;
 }
 
+.icon {
+  float: left;
+  margin-right: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
 @media (min-width: 700px) {
   .logo-container {
     height: 231px;
@@ -128,6 +137,15 @@ body {
   }
   .navigation-right a:hover {
     font-weight: 700;
+  }
+  .hidden {
+    display: inline-block;
+  }
+  .icon {
+    margin-right: 6px;
+  }
+  .reverse-hidden {
+    display: none;
   }
 }
 

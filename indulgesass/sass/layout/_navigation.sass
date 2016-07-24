@@ -18,6 +18,13 @@ $bold: 700
     color: #fff
     text-decoration: none
 
+.icon
+  float: left
+  margin-right: 6px
+
+.hidden
+  display: none
+
 @media (min-width: $breakpoint)
   .logo-container
     height: 11 * $baseline
@@ -36,6 +43,12 @@ $bold: 700
     a
       &:hover
         font-weight: $bold
+  .hidden
+    display: inline-block
+  .icon
+    margin-right: 6px
+  .reverse-hidden
+    display: none
 
 
 
