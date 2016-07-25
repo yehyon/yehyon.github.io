@@ -392,6 +392,10 @@ footer {
   background-color: #141728;
 }
 
+.footer-options:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .logo-flex {
   display: flex;
   justify-content: center;
