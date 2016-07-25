@@ -355,10 +355,10 @@ footer {
     width: 93px;
     height: auto;
     position: absolute;
-    bottom: 81px;
+    bottom: 83px;
   }
   .footer-menu {
-    padding-top: 69px;
+    padding-top: 66px;
   }
   .flex-container {
     display: flex;
@@ -371,6 +371,23 @@ footer {
     vertical-align: baseline;
     margin-left: 13px;
     margin-right: 13px;
+  }
+  .social-menu {
+    position: absolute;
+    right: 0;
+    top: 63px;
+  }
+  .social-icons {
+    width: auto;
+    float: left;
+    margin-left: 7px;
+  }
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .social-icons a .fa {
+    font-size: 20px;
   }
 }
 
