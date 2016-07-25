@@ -15,7 +15,7 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 1.3750em;
+  font-size: 1.125rem;
   line-height: 1.3636em;
   margin-top: 1.3636em;
 }
@@ -39,6 +39,16 @@ footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.8750em;
+}
+
+@media (min-width: 750px) {
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.3750em;
+    line-height: 1.3636em;
+    margin-top: 1.3636em;
+  }
 }
 
 [class*="box-"] {
@@ -411,7 +421,7 @@ footer {
 }
 
 .btn-transparent-small {
-  height: 31.5px;
+  height: 21px;
   box-sizing: border-box;
   color: #fff;
   background-color: transparent;
@@ -430,13 +440,26 @@ footer {
   color: #7e6061;
 }
 
+@media (min-width: 750px) {
+  .btn-transparent-small {
+    height: 31.5px;
+  }
+}
+
 .tope {
   background-color: #756162;
   text-align: center;
   position: relative;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 7%;
+  padding-left: 7%;
   padding-top: 8px;
+}
+
+@media (min-width: 750px) {
+  .tope {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 }
 
 /*# sourceMappingURL=../map/main.css.map */
