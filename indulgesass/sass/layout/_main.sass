@@ -2,7 +2,7 @@ $breakpoint: 750px
 $baseline: 21px
 
 main 
-  margin-top: $baseline * 8
+  margin-top: $baseline * 3
 
 .flex
   width: 100%
@@ -26,6 +26,8 @@ main
   text-align: center
 
 @media (min-width: $breakpoint)
+  main 
+    margin-top: $baseline * 8
   .flex
     display: flex
     flex-wrap: wrap

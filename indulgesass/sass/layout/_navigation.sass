@@ -2,9 +2,6 @@ $breakpoint: 750px
 $baseline: 21px
 $bold: 700
 
-.logo-container
-  height: 10 * $baseline
-
 .logo
   img
     position: absolute
@@ -13,7 +10,7 @@ $bold: 700
     top: ( $baseline * 4 ) - 4px
 
 .logo-container
-  height: 10 * $baseline
+  height: 11 * $baseline
 
 .navigation
   height: $baseline * 3
@@ -33,8 +30,6 @@ $bold: 700
   display: none
 
 @media (min-width: $breakpoint)
-  .logo-container
-    height: 11 * $baseline
   .logo
     img
       top: ( $baseline * 5 ) - 4px

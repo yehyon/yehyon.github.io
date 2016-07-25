@@ -6,10 +6,9 @@ body {
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 2.0000em;
-  line-height: 1.1875em;
-  margin-top: 1.1875em;
-  margin-bottom: 0.0000em;
+  font-size: 1.6875em;
+  line-height: 1.5556em;
+  margin-top: 1.5556em;
 }
 
 h3 {
@@ -46,6 +45,12 @@ footer {
     font-size: 1.25rem;
     line-height: 1.3636em;
     margin-top: 1.3636em;
+  }
+  h2 {
+    font-size: 2.0000em;
+    line-height: 1.1875em;
+    margin-top: 1.1875em;
+    margin-bottom: 0.0000em;
   }
 }
 
@@ -173,10 +178,6 @@ body {
   }
 }
 
-.logo-container {
-  height: 210px;
-}
-
 .logo img {
   position: absolute;
   transform: translateX(50%);
@@ -185,7 +186,7 @@ body {
 }
 
 .logo-container {
-  height: 210px;
+  height: 231px;
 }
 
 .navigation {
@@ -211,9 +212,6 @@ body {
 }
 
 @media (min-width: 750px) {
-  .logo-container {
-    height: 231px;
-  }
   .logo img {
     top: 101px;
   }
@@ -252,7 +250,12 @@ header {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 147px;
+  padding-top: 94px;
+}
+
+.header-txt {
+  max-width: 283px;
+  margin: auto;
 }
 
 strong {
@@ -264,8 +267,17 @@ strong {
   width: 180px;
 }
 
+@media (min-width: 540px) {
+  header {
+    padding-top: 147px;
+  }
+  .header-txt {
+    max-width: 498px;
+  }
+}
+
 main {
-  margin-top: 168px;
+  margin-top: 63px;
 }
 
 .flex {
@@ -297,6 +309,9 @@ main {
 }
 
 @media (min-width: 750px) {
+  main {
+    margin-top: 168px;
+  }
   .flex {
     display: flex;
     flex-wrap: wrap;
@@ -434,7 +449,7 @@ footer {
   border: 1px solid #fff;
   font-size: 0.875rem;
   font-weight: 300;
-  width: 64%;
+  width: 66%;
   position: absolute;
   bottom: 31.5px;
   transform: translateX(50%);

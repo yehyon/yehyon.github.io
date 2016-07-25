@@ -6,7 +6,12 @@ header
   width: 100%
   text-align: center
   text-transform: uppercase
-  padding-top: $baseline * 7
+  padding-top: ( $baseline * 5 ) - 11px
+
+.header-txt
+  max-width: 283px
+  margin: auto
+
 
 strong
   font-weight: $bold
@@ -14,3 +19,9 @@ strong
 .btn-transparent
   margin-top: ( $baseline * 2 ) - 4px
   width: 180px
+
+@media (min-width: $type-mid-breakpoint)
+  header 
+    padding-top: $baseline * 7
+  .header-txt
+    max-width: 498px
