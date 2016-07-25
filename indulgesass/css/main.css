@@ -389,6 +389,11 @@ footer {
   background-color: #141728;
 }
 
+.logo-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .bottom-logo {
   padding-top: 63px;
   height: 42px;
@@ -437,6 +442,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 168px;
+  }
+  .logo-flex {
+    display: block;
   }
   .bottom-logo {
     float: left;
