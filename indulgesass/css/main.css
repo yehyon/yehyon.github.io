@@ -15,6 +15,9 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-size: 1.3750em;
+  line-height: 1.3636em;
+  margin-top: 1.3636em;
 }
 
 h4 {
@@ -36,6 +39,69 @@ footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.8750em;
+}
+
+[class*="box-"] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-1 {
+  background-image: url(../indurge_assets/box-1.png);
+}
+
+.box-3 {
+  background-image: url(../indurge_assets/box-3.png);
+}
+
+.box-4 {
+  background-image: url(../indurge_assets/box-4.png);
+}
+
+.box-5 {
+  background-image: url(../indurge_assets/box-5.png);
+}
+
+.box-6 {
+  background-image: url(../indurge_assets/box-6.png);
+}
+
+.box-7 {
+  background-image: url(../indurge_assets/box-7.png);
+}
+
+.box-8 {
+  background-image: url(../indurge_assets/box-8.png);
+}
+
+.box-9 {
+  background-image: url(../indurge_assets/box-9.png);
+}
+
+.box-10 {
+  background-image: url(../indurge_assets/box-10.png);
+}
+
+.box-12 {
+  background-image: url(../indurge_assets/box-12.png);
+}
+
+.box-13 {
+  background-image: url(../indurge_assets/box-13.png);
+}
+
+.box-14 {
+  background-image: url(../indurge_assets/box-14.png);
+}
+
+.box-15 {
+  background-image: url(../indurge_assets/box-15.png);
+}
+
+.box-16 {
+  background-image: url(../indurge_assets/box-16.png);
+  background-size: contain;
 }
 
 body {
@@ -192,7 +258,6 @@ main {
 .flex-items {
   float: left;
   box-sizing: border-box;
-  border: 1px solid #fff;
 }
 
 @media (min-width: 750px) {
@@ -298,6 +363,30 @@ footer {
 
 .fa {
   margin-right: 5px;
+}
+
+.btn-transparent-small {
+  height: 31.5px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  width: 140px;
+  position: absolute;
+  bottom: 31.5px;
+  transform: translateX(50%);
+  right: 50%;
+}
+
+.tope {
+  background-color: #756162;
+  text-align: center;
+  position: relative;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 8px;
 }
 
 /*# sourceMappingURL=../map/main.css.map */
