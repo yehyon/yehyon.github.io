@@ -205,10 +205,14 @@ body {
 }
 
 .logo-container {
-  height: 231px;
+  height: 189px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navigation {
+  margin-top: 42px;
   height: 63px;
   vertical-align: middle;
   width: 100%;
@@ -233,6 +237,9 @@ body {
 @media (min-width: 750px) {
   .logo img {
     top: 101px;
+  }
+  .logo-container {
+    border-bottom: none;
   }
   .navigation {
     height: 21px;
