@@ -2,7 +2,8 @@
 $bold: 700
 $thin: 300
 $hairline: 100
-$breakpoint: 750px
+$type-mid-breakpoint: 540px
+$type-breakpoint: 800px
 
 
 body
@@ -43,11 +44,14 @@ footer
   font-weight: $thin
   font-size: 0.8750em
 
-
-@media (min-width: $breakpoint)
+@media (min-width: $type-mid-breakpoint)
   h3
-    font-family: 'Lato', sans-serif
-    font-weight: $thin
-    font-size: 1.3750em
+    font-size: 1.25rem
+    line-height: 1.3636em
+    margin-top: 1.3636em
+
+@media (min-width: $type-breakpoint)
+  h3
+    font-size: 1.375rem
     line-height: 1.3636em
     margin-top: 1.3636em
