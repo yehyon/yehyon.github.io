@@ -1,2 +1,40 @@
-body
-  color: #fff
+$baseline: 21px
+
+footer
+  background-color: #141728
+
+.wrapper-footer
+  float: left
+  height: $baseline * 25
+  width: 100%
+  background-color: #141728
+
+
+@media (min-width: $breakpoint)
+  .wrapper-footer
+    float: none
+    position: relative
+    max-width: 1180px
+    margin-left: auto
+    margin-right: auto
+    height: $baseline * 8
+  .bottom-logo
+    float: left
+    width: 93px
+    height: auto
+    position: absolute
+    bottom: ( $baseline * 4 ) - 3px
+  .footer-menu
+    padding-top: ( $baseline * 3 ) + 6px
+  .flex-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+  .footer-items
+    a
+      text-decoration: none
+      color: #fff
+      vertical-align: baseline
+      margin-left: 13px
+      margin-right: 13px
+

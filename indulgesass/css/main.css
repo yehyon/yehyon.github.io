@@ -40,6 +40,7 @@ footer {
 
 body {
   background-color: #003652;
+  color: #fff;
 }
 
 .wrapper {
@@ -106,6 +107,7 @@ body {
   height: 63px;
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .navigation a {
@@ -230,10 +232,53 @@ main {
   .order-3 {
     order: 3;
   }
+  main {
+    margin-bottom: 84px;
+  }
 }
 
-body {
-  color: #fff;
+footer {
+  background-color: #141728;
+}
+
+.wrapper-footer {
+  float: left;
+  height: 525px;
+  width: 100%;
+  background-color: #141728;
+}
+
+@media (min-width: 750px) {
+  .wrapper-footer {
+    float: none;
+    position: relative;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 168px;
+  }
+  .bottom-logo {
+    float: left;
+    width: 93px;
+    height: auto;
+    position: absolute;
+    bottom: 81px;
+  }
+  .footer-menu {
+    padding-top: 69px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-items a {
+    text-decoration: none;
+    color: #fff;
+    vertical-align: baseline;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
 }
 
 .btn-transparent {
