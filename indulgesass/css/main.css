@@ -225,6 +225,8 @@ body {
   }
   .icon {
     margin-right: 6px;
+    height: 18px;
+    width: auto;
   }
   .reverse-hidden {
     display: none;
