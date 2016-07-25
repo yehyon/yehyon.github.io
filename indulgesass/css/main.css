@@ -100,11 +100,16 @@ body {
   position: absolute;
   transform: translateX(50%);
   right: 50%;
-  top: 59px;
+  top: 80px;
+}
+
+.logo-container {
+  height: 210px;
 }
 
 .navigation {
   height: 63px;
+  vertical-align: middle;
   width: 100%;
   display: flex;
   justify-content: space-around;
