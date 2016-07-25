@@ -25,6 +25,14 @@ h4 {
   font-size: 1.1250em;
 }
 
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3636em;
+  margin-top: 1.3636em;
+}
+
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -59,6 +67,14 @@ footer {
     font-size: 1.375rem;
     line-height: 1.3636em;
     margin-top: 1.3636em;
+  }
+}
+
+@media (min-width: 750px) {
+  h5 {
+    font-size: 0.8750em;
+    line-height: 1.5000em;
+    margin-top: 1.5000em;
   }
 }
 
@@ -363,6 +379,7 @@ main {
 
 footer {
   background-color: #141728;
+  position: relative;
 }
 
 .wrapper-footer {
@@ -370,6 +387,46 @@ footer {
   height: 525px;
   width: 100%;
   background-color: #141728;
+}
+
+.bottom-logo {
+  padding-top: 63px;
+  height: 42px;
+}
+
+.social-menu {
+  padding-top: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.social-icons {
+  width: auto;
+  margin-left: 7px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons a .fa {
+  font-size: 34px;
+}
+
+.footer-menu {
+  padding-top: 21px;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (min-width: 750px) {
@@ -389,7 +446,9 @@ footer {
     bottom: 83px;
   }
   .footer-menu {
-    padding-top: 66px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 45px;
   }
   .flex-container {
     display: flex;
@@ -397,25 +456,22 @@ footer {
     justify-content: center;
   }
   .footer-items a {
-    text-decoration: none;
-    color: #fff;
     vertical-align: baseline;
     margin-left: 13px;
     margin-right: 13px;
   }
   .social-menu {
+    padding-top: 0px;
     position: absolute;
     right: 0;
     top: 63px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .social-icons {
     width: auto;
     float: left;
     margin-left: 7px;
-  }
-  .social-icons a {
-    text-decoration: none;
-    color: #fff;
   }
   .social-icons a .fa {
     font-size: 20px;
