@@ -1,0 +1,26 @@
+@media (max-width: 750px) {
+#nav {
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  height: 40%;
+  top: 0;
+  width: 95%;
+  max-width: 700px;
+  background: #725056;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+}
+#nav:not(:target) {
+  left: -200%;
+  transition: left 1.5s;
+}
+#nav:target {
+  left: 0;
+  transition: left .5s;
+}
+.navigation-left h4 {
+  font-size: 1em;
+  line-height: 1.5000em;
+  margin-top: 1.5000em;
+}
+}
