@@ -152,7 +152,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1180px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,6 +194,10 @@ body {
   }
   .unit-6-10 {
     width: 60%;
+  }
+  .second-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
