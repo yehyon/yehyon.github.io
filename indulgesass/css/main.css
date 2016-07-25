@@ -101,7 +101,6 @@ footer {
 
 .box-16 {
   background-image: url(../indurge_assets/box-16.png);
-  background-size: contain;
 }
 
 body {
@@ -363,6 +362,11 @@ footer {
   font-size: 1.125rem;
 }
 
+.btn-transparent:hover {
+  background-color: #fff;
+  color: #003652;
+}
+
 .fa {
   margin-right: 5px;
 }
@@ -380,6 +384,11 @@ footer {
   bottom: 31.5px;
   transform: translateX(50%);
   right: 50%;
+}
+
+.btn-transparent-small:hover {
+  background-color: #fff;
+  color: #7e6061;
 }
 
 .tope {
