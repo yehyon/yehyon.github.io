@@ -19,6 +19,12 @@
   left: 0;
   transition: left .5s;
 }
+
+.close-icon {
+  font-weight: 700;
+  opacity: .8;
+}
+
 .navigation-left h4 {
   font-size: 1em;
   line-height: 1.5000em;
