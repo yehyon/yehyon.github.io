@@ -1,0 +1,53 @@
+.box {
+  margin: 10px auto 20px;
+  padding: 10px;
+}
+
+.icon-example {
+  width: 32px;
+  height: 34px;
+}
+
+.demo {
+  font: 1em Ariel, sans-serif;
+}
+
+.demo .box {
+  margin: 10px auto 20px;
+  padding: 10px;
+}
+
+.demo .icon-example {
+  width: 32px;
+  height: 34px;
+}
+
+.icon {
+  width: 32px;
+  height: 45px;
+}
+
+.main-content {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .main-content {
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-content {
+    width: 16.66666667%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main-content {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=../map/sass-review.css.map */
