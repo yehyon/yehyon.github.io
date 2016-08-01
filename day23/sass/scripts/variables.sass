@@ -1,0 +1,22 @@
+%center-pos
+  display: flex
+  justify-content: center
+  align-items: center
+%align-center-margin
+  margin:
+    left: auto
+    right: auto
+
+$container-width: 1260px
+$dark-gray: #3d3c31
+
+.container
+  @extend %align-center-margin
+  max-width: $container-width
+  min-width: ceil($container-width/2)
+
+.page-footer
+  @extend %align-center-margin
+  width: 100vh - 20vh
+  background: $dark-gray
+  color: rgba( lighten($dark-gray, 40%), 0.45 )

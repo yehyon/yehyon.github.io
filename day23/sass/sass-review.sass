@@ -1,0 +1,98 @@
+@import box
+
+// Nested Rules
+// $page-width: 1280px
+// $columns: 16
+// $column-width: $page-width / $columns
+
+// .container
+//   max-width: $page-width
+//   margin: 
+//     left: auto
+//     right: auto
+//   .row
+//     &::before,
+//     &::after
+//       content: ''
+//       display: table
+//     &::after
+//       clear: both
+//     .lt-ie8 &
+//       zoom: 1
+
+// %col-module
+//   float: left
+//   padding:
+//     left: 1rem
+//     right: 1rem
+
+// .col-1
+//   @extend %col-module
+//   width: $column-width
+
+// .col-2
+//   @extend %col-module
+//   width: $column-width * 2
+
+
+.demo 
+  @import box
+  font: 1em Ariel, sans-serif
+
+.icon
+  +size(32px, 45px)
+
+.icon-example
+  @extend %icon-size
+
+// @media (max-width: 767px) 
+//   .icon-example
+//     @extend %icon-size
+
+// .box
+//   margin: 10px auto 20px
+//   padding: 10px
+
+// =size($width, $height: $width)
+//   width: $width
+//   height: $height
+
+// %icon-size
+//   width: 32px
+//   height: 34px
+
+
+
+// .demo-box
+//   @include margin(auto)
+
+$medium-screen: 960px
+$large-screen: 1280px
+$wide-screen: 1600px
+
+.main-content 
+  float: left
+  width: 100%
+  @media (min-width: $medium-screen)
+    width: 1/3*100%
+  @media (min-width: $large-screen)
+    width: 1/6*100%
+  @media (min-width: $wide-screen)
+    width: 1/10*100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

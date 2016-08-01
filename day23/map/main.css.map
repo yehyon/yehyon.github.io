@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "../css/main.css",
+	"sources": [
+		"../sass/main.sass",
+		"../sass/scripts/variables.sass"
+	],
+	"mappings": "ACYA,AARA,UAQU,EAKV,AAbA,YAaY,CAbS;EACnB,MAAM,AAAC,CAAC,AACN,IAAI,EAAE,IAAK;EADb,MAAM,AAAC,CAAC,AAEN,KAAK,EAAE,IAAK;CAAK;;AAKrB,AAAA,UAAU,CAAC;EAET,SAAS,EALO,MAAM;EAMtB,SAAS,EAAE,KAAI;CAAuB;;AAExC,AAAA,YAAY,CAAC;EAEX,KAAK,EAAE,IAAK;EACZ,UAAU,EAVA,OAAO;EAWjB,KAAK,EAAQ,yBAAO;CAA4B",
+	"names": []
+}
