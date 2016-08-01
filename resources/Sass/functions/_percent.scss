@@ -1,0 +1,3 @@
+@function getMediaRation($target, $context) {
+  @return $target/$context*100%;
+}

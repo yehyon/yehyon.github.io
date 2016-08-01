@@ -1,0 +1,71 @@
+//Media Query
+=mq($breakpoint) 
+  @if $breakpoint == sm
+    @media #{$mq-sm} 
+      @content 
+  @else if $breakpoint == md 
+    @media #{$mq-md} 
+      @content
+  @else if $breakpoint == lg 
+    @media #{$mq-lg}  
+      @content 
+  
+=contrast-color($color, $compare-light: 50%, $amount: 20%) 
+  $lightness: lightness($color)
+
+//iehack
+=ie8hack
+  @media \0screen
+    @content
+
+//Size
+=height($leading, $multiply-baseline)
+  height: $leading * $multiply-baseline
+
+=width($column, $number-of-columns, $gutter, $number-of-gutters)
+  width: ($column * $number-of-columns) + ($gutter * $number-of-gutters)
+
+=container($column, $number-of-columns, $gutter, $number-of-gutters, $bleed, $number-of-bleeds)
+  width: ($column * $number-of-columns) + ($gutter * $number-of-gutters) + ($bleed * $number-of-bleeds)
+
+=max-container($column, $number-of-columns, $gutter, $number-of-gutters, $bleed, $number-of-bleeds)
+  max-width: ($column * $number-of-columns) + ($gutter * $number-of-gutters) + ($bleed * $number-of-bleeds)
+
+=size($width, $height:$width)
+  width: $width
+  height: $height
+
+//Embelishments
+=border($color)
+  border: 1px solid $color
+
+//Buttons
+
+
+//Setting Element Characteristic
+=box-sizing
+  -webkit-box-sizing: border-box
+  -mox-box-sizing: border-box
+  box-sizing: border-box
+
+//Alignment
+=center-container ($margin, $container-width)
+  margin:
+    left: $margin
+    right: $margin
+  width: $container-width
+
+=center-flexible-container ($margin, $container-width)
+  margin:
+    left: $margin
+    right: $margin
+  max-width: $container-width
+
+=triangle($px, $color)
+  +size(0,0)
+  border-left: $px solid transparent
+  border-right: $px solid transparent
+  border-bottom: $px solid $color
+
+//Text Alignment
+

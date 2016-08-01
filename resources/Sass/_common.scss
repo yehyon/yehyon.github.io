@@ -1,0 +1,80 @@
+@import "functions/percent";
+
+%reset-list ul,
+%reset-list ol,
+%reset-list,
+%reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+// remove blank space under img
+%rmv-img-blank {
+  vertical-align: bottom;
+}
+
+// create blank space adjacent to img so that txt can take up same space
+%align-img-bottom img + * {
+  overflow: hidden;
+}
+
+//image fluidity applied to background img
+img%flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img%keep-original-scale {
+  max-width: 100%;
+}
+
+%rwd-media {
+  width: 100%
+  height: auto;
+}
+
+%rwd-media-ratio {
+  width: 100%;
+  height: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+@function getMediaRation($target, $context) {
+  @return $target/$context*100%;
+}
+
+%rwd-media-4-3 {
+  @extend %rwd-media-ratio;
+  padding-bottom: getMediaRatio(3,4);
+}
+
+%rwd-media-16-9 {
+  @extend %rwd-media-ratio;
+  padding-bottom: getMediaRatio(9,16);
+}
+
+%rwd-media-21-9 {
+  @extend %rwd-media-ratio;
+  padding-bottom: getMediaRatio(9,21);
+}
+
+%horizontal-center {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+%clearfix::after,
+%cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+%lt-ie8 %clearfix,
+%lt-ie8 %cf {
+  zoom: 1;
+}
+

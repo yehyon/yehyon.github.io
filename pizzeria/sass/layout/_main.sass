@@ -1,0 +1,96 @@
+.script-red
+  color: $red
+  font-size: 1.2500em
+  line-height: 2.4000em
+
+.paragraph-style
+  color: $text-black
+  font-size: 0.7500em
+  line-height: 2.0000em
+  text-align: justify
+
+.footnote-style
+  text-align: right
+  font-size: 0.7500em
+  line-height: 4.0000em
+  color: $text-black
+
+
+.restaurant-news
+  +height($leading, 23)
+
+.restaurant-information
+  +height($leading, 22)
+  background: url("../assets/bg_wood.jpg")
+
+.restaurant-about
+  +height($leading, 8)
+
+.content-box
+  +height($leading, 5)
+  +center-container(auto, 87.5%)
+  +border($wood)
+  border-radius: 4px
+  text-align: center
+  margin-bottom: $leading
+
+.menu-container
+  box-sizing: border-box
+  padding:
+    left: $bleed-s
+    right: $bleed-s
+  text-align: center
+  height: $leading * 7
+  +mq(sm)
+    +center-flexible-container (auto, 800px)
+  +mq(md)
+    width: 315px
+    float: left
+  +mq(lg)
+    width: $column-l * 4 + $gutter-l * 3
+    float: left
+
+.news-container
+  box-sizing: border-box
+  padding:
+    left: 20px
+    right: 20px
+  text-align: center
+  +mq(sm)
+    +center-flexible-container (auto, 800px)
+  +mq(md)
+    width: 315px
+    float: left
+  +mq(lg)
+    width: $column-l * 4 + $gutter-l * 3
+    float: left
+
+.greeting-container
+  box-sizing: border-box
+  padding:
+    left: 20px
+    right: 20px
+  text-align: center
+  height: $leading * 8
+  +mq(sm)
+    +center-flexible-container (auto, 800px)
+  +mq(md)
+    width: 315px
+    float: left
+  +mq(lg)
+    width: $column-l * 4 + $gutter-l * 3
+    float: left
+
+
+.menu-photo-container
+  +size(100%, $leading * 5)
+  align-items: center
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+.menu-photo
+  box-sizing: border-box
+  +size($column-s * 2 + $gutter-s)
+  border: solid 2px $light-gray
+  border-radius: ( $column-s * 2 + $gutter-s ) / 2
