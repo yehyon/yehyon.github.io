@@ -1,3 +1,13 @@
+main
+  +mq(md)
+    width: 315px * 3
+    margin:
+      left: auto
+      right: auto
+  +mq(lg)
+    width: $column-l * 4 + $gutter-l * 3
+    float: left
+
 .script-red
   color: $red
   font-size: 1.2500em
@@ -15,16 +25,51 @@
   line-height: 4.0000em
   color: $text-black
 
+.wood-header-txt
+  text-align: center
+  color: $wood
 
-.restaurant-news
-  +height($leading, 23)
+.button-korean-txt
+  color: $red
+  font-size: 1.1250em
 
 .restaurant-information
-  +height($leading, 22)
   background: url("../assets/bg_wood.jpg")
+  padding-top: $leading * 2
+  position: relative
+  padding-bottom: $leading
+  h2
+    &:before,
+      content: ''
+      +size(55px, 44px)
+      background: url("../assets/ribbon.png")
+      background-size: contain
+      background-repeat: no-repeat
+      @extend %horizontal-center
+      left: 0
+      top: -3px
+  +mq(md)
+    +height($leading, 14)
+  +mq(lg)
+    float: left
+
 
 .restaurant-about
+  padding-top: $leading
   +height($leading, 8)
+  color: $white
+  h3
+    text-align: center
+    font-size: 1.5em
+    line-height: $leading
+    text-shadow: 0 0px 6px rgba(#000, .8)
+
+.flex-container
+  +mq(md)
+    display: flex
+    flex-direction: row
+    justify-items: center
+
 
 .content-box
   +height($leading, 5)
@@ -32,7 +77,16 @@
   +border($wood)
   border-radius: 4px
   text-align: center
-  margin-bottom: $leading
+  margin-top: $leading
+  color: $wood
+  +mq(md)
+    +size(224px, $leading * 7)
+    margin-top: $leading * 2
+  +mq(lg)
+    float: left
+  h3
+    text-transform: uppercase
+    font-weight: $thin
 
 .menu-container
   box-sizing: border-box
@@ -71,7 +125,6 @@
     left: 20px
     right: 20px
   text-align: center
-  height: $leading * 8
   +mq(sm)
     +center-flexible-container (auto, 800px)
   +mq(md)
