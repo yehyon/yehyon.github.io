@@ -1,5 +1,11 @@
 $breakpoint: 750px
 
+$boxes: box-1, box-3, box-4, box-5, box-6, box-7, box-8, box-9, box-10, box-12, box-13, box-14, box-15, box-16
+
+@each $boxes in $boxes
+  .#{$boxes}
+    background: url("../indurge_assets/#{$boxes}.png")
+
 .wrapper
   background-repeat: no-repeat
   background-image: url(../indurge_assets/header-bg.png)
@@ -10,45 +16,3 @@ $breakpoint: 750px
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-
-.box-1
-  background-image: url(../indurge_assets/box-1.png)
-
-.box-3
-  background-image: url(../indurge_assets/box-3.png)
-
-.box-4
-  background-image: url(../indurge_assets/box-4.png)
-
-.box-5
-  background-image: url(../indurge_assets/box-5.png)
-
-.box-6
-  background-image: url(../indurge_assets/box-6.png)
-
-.box-7
-  background-image: url(../indurge_assets/box-7.png)
-
-.box-8
-  background-image: url(../indurge_assets/box-8.png)
-
-.box-9
-  background-image: url(../indurge_assets/box-9.png)
-
-.box-10
-  background-image: url(../indurge_assets/box-10.png)
-
-.box-12
-  background-image: url(../indurge_assets/box-12.png)
-
-.box-13
-  background-image: url(../indurge_assets/box-13.png)
-
-.box-14
-  background-image: url(../indurge_assets/box-14.png)
-
-.box-15
-  background-image: url(../indurge_assets/box-15.png)
-
-.box-16
-  background-image: url(../indurge_assets/box-16.png)

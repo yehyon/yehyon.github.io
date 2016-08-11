@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="../resources/initialization/reset.css">
+  <link rel="stylesheet" type="text/css" href="../resources/common.css">
+  <style type="text/css">
+    body {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .flex-container {
+      padding-right: 30px;
+      float: right;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    button {
+      border: none;
+      background-size: cover;
+    }
+    .circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+    button:nth-child(1) { background-image: url(assets/chloe.png); }
+    button:nth-child(2) { background-image: url(assets/gidget.jpg); }
+    button:nth-child(3) { background-image: url(assets/snowball.jpg); }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <button type="button" class="circle blue"></button>
+    <button type="button" class="circle pink"></button>
+    <button type="button" class="circle yellow"></button>
+  </div>
+  <script type="text/javascript" src="../resources/DOM Helper/index.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+</body>
+</html>

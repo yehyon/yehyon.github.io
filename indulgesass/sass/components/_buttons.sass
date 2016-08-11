@@ -1,31 +1,26 @@
-$btn-transparent-default-bg: transparent
-$btn-transparent-txt: #fff
-$baseline: 21px
-$breakpoint: 750px
-
+%btn-container-setting 
+  box-sizing: border-box
+  border: 1px solid #fff
 
 .btn-transparent
+  @extend %btn-container-setting 
   height: $baseline * 2
-  box-sizing: border-box
-  color: $btn-transparent-txt
-  background-color: $btn-transparent-default-bg
-  border: 1px solid #fff
+  color: $btn-transparent-color
+  background-color: $transparent
   text-transform: uppercase
   font-size: 1.125rem
   &:hover
     background-color: #fff
-    color: #003652
-
+    color: $primary-color
 
 .fa
   margin-right: 5px
 
 .btn-transparent-small
+  @extend %btn-container-setting 
   height: $baseline
-  box-sizing: border-box
-  color: $btn-transparent-txt
-  background-color: $btn-transparent-default-bg
-  border: 1px solid #fff
+  color: $transparent
+  background-color: $transparent
   font-size: 0.875rem
   font-weight: 300
   width: 66%
@@ -35,7 +30,7 @@ $breakpoint: 750px
   right: 50%
   &:hover
     background-color: #fff
-    color: #7e6061
+    color: $secondary-color
 
 
 @media (min-width: $breakpoint)

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DOM Script Basic</title>
+  <style type="text/css">
+    #button-group {
+      display: flex;
+      flex-direction: row;
+      position: fixed; 
+      top:0; 
+      left:0; 
+      width: 100%;
+    }
+
+    #button-group button {
+      cursor: pointer;
+      border: none; 
+      padding: 1em; 
+      background: #000; 
+      color: #fff;
+      text-shadow: 0 0 3px rgba(0,0,0,0.36);
+    }
+
+    #button-group button:nth-child(1) {background-color: #188fdb}
+    #button-group button:nth-child(2) {background-color: #ff705b}
+    #button-group button:nth-child(3) {background-color: #b0e0e6}
+    #button-group button:nth-child(4) {background-color: #feb3a5}
+    #button-group button:nth-child(5) {background-color: #c2cbd0}
+
+    #button-group button:nth-child(1):focus, hover {background-color: #188fdb}
+    #button-group button:nth-child(2):focus, hover {background-color: #ff705b}
+    #button-group button:nth-child(3):focus, hover {background-color: #b0e0e6}
+    #button-group button:nth-child(4):focus, hover {background-color: #feb3a5}
+    #button-group button:nth-child(5):focus, hover {background-color: #c2cbd0}
+
+  </style>
+</head>
+<body>
+
+
+<div id="button-group" role="group">
+  <button type="button">#188fdb</button>
+  <button type="button">#ff705b</button>
+  <button type="button">#b0e0e6</button>
+  <button type="button">#feb3a5</button>
+  <button type="button">#c2cbd0</button>
+</div>
+
+
+<script>
+var body = document.body; 
+var btn_group = document.getElementById('button-group');
+var btns = btn_group.getElementsByTagName('button');
+console.log(btns);
+var btn_1 = btns [0];
+var btn_2 = btns [1];
+var btn_3 = btns [2];
+var btn_4 = btns [3];
+var btn_5 = btns [4];
+
+function changecolor() {
+  var wanted_color = this.firstChild.nodeValue;
+  body.style.backgroundColor = wanted_color;
+  console.log(this.firstChild.nodeValue);
+};
+
+btn_1.onmouseenter = btn_2.onmouseenter = btn_3.onmouseenter = btn_4.onmouseenter = btn_5.onmouseenter = changecolor;
+
+// btn_1.onclick = function() {
+//   var wanted_color = this.firstChild.nodeValue;
+//   body.style.backgroundColor = wanted_color;
+// };
+
+// btn_2.onclick = function() {
+//   var wanted_color = this.firstChild.nodeValue;
+//   body.style.backgroundColor = wanted_color;
+// };
+
+// btn_3.onclick = function() {
+//   var wanted_color = this.firstChild.nodeValue;
+//   body.style.backgroundColor = wanted_color;
+// };
+
+// btn_4.onclick = function() {
+//   var wanted_color = this.firstChild.nodeValue;
+//   body.style.backgroundColor = wanted_color;
+// };
+
+// btn_5.onclick = function() {
+//   var wanted_color = this.firstChild.nodeValue;
+//   body.style.backgroundColor = wanted_color;
+// };
+
+console.log(document.getElementById('button-group'));
+
+function tag(name) {
+  return document.getElementsByTagName(name);
+}
+
+function id(name) {
+  return document.getElementById(name);
+}
+
+
+// body.onmouseenter = function() {
+//   body.style.backgroundColor = '#FEB3A4';
+// };
+
+// body.onmouseleave = function() {
+//   body.style.backgroundColor = '#fff';
+// };
+
+// buttonblue[0].onclick = function() {
+//   body.style.backgroundColor = '#FEB3A4';
+// };
+
+
+
+// function tag(name) {
+//   return document.getElementsByTagName(name);
+// }
+
+
+
+// var paras = tag('p');
+// var divs = tag('div');
+// var uls = tag('ul');
+// var lis = tag('li');
+// var headings = tag('h2');
+// var links = tag('a');
+// var buttons = tag('button');
+
+// buttons.onmouseenter = function() {
+//   body.style.backgroundColor = '#FEB3A4';
+// };
+
+
+  // var h2_1 = id('heading-01');
+  // var h2_2 = id('heading-02');
+  // var h2_3 = id('heading-03');
+  // var h2_4 = id('heading-04');
+
+  // function print(msg) {
+  //   console.log(msg);
+  // }
+
+  // print(divs);
+  // print(uls);
+  // print(lis);
+  // print(headings);
+  // print(links);
+  // print(paras);
+
+  // print(h2_1)
+  // print(h2_2)
+  // print(h2_3)
+  // print(h2_4)
+
+  // console.log( paras.length );
+  // console.log( paras.item(0) );
+  // console.log( paras[1] );
+  // console.log( paras[0].nodeType );
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dom Scripting with JavaScript</title>
+
+</head>
+<body>
+  
+  <p class="my-para">
+    <strong>Hello</strong> How are you doing? 
+  </p>
+
+  <form name="primary_form" action="#" method="GET">
+    <p>
+      <label for="c_id">ID</label>
+      <input type="text" name="c_id" id="c_id" placeholder="yamoo9">
+    </p>
+  </form>
+  <button type="submit">전송</button>
+  <form name="secondary-form" action="#" method="GET">
+    <p>
+      <label for="c_mail">Email</label>
+      <input type="email" name="c_mail" id="c_mail" placeholder="yamoo9@example.com">
+    </p>
+  </form>
+  <button type="submit">전송</button>
+
+  <script type="text/javascript">
+    var forms = document.forms;
+
+    console.log(forms);
+
+    if (document.all) {
+      console.info('IE browser for sure');
+    } else {
+      console.info('maybe not');
+    };
+
+
+    var root_element;
+
+    root_element = document.documentElement;
+    root_element = document.getElementsByTagName('html')[0];
+
+
+    console.log('root_element:', root_element);
+
+    var head = document.head;
+    var body = document.body;
+
+    var inputs = document.getElementsByTagName('input');
+    var buttons = document.getElementsByTagName('button');
+
+    console.log(inputs);
+    console.log(buttons);
+
+    // ID 속성을 통안 접근 방법
+    var c_id = document.getElementsByTagName('c_id');
+    var c_mail = document.getElementsByTagName('c_mail');
+
+    console.log('c_id', c_id);
+    console.log('c_mail', c_mail);
+
+    var first_para = document.getElementsByTagName('p').item(0);
+    var first_para_nodes = first_para.childNodes;
+
+    console.log(first_para_nodes[0].nodeType === 3);
+    console.log(first_para_nodes[1].nodeType === 1);
+    console.log(first_para_nodes[2].nodeType === 3);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+// @function em($unit, $base: 16)
+//   $unit: $unit/(1px)
+//   @return $unit/16 * 1em
+
+// or
+
+// @function em($unit, $base:16)
+//   @function strip-unit ($unit)
+//   @return $unit/16 * 1em
+
+// // use as $variable: em(800px)
+
+// @function strip-unit ($px)
+//   @return $px/(1px)

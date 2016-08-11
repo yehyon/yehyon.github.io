@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>box</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div id="box"></div>
+
+
+<script type="text/javascript">
+
+  var standard_mode = document.compatMode == 'CSS1Compat';
+
+  var html = document.documentElement;
+  if ( standard_mode ) {
+    html.setAttribute('class', 'standard');
+  }
+  else {
+    html.setAttribute('class', 'no-standard');
+  }
+
+</script>
+
+
+</body>
+</html>
