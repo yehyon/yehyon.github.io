@@ -91,9 +91,40 @@ function camelCase(css_prop) {
   });
 }
 
+function isType(data) {
+  return Object.prototype.toString.call(data).slice(8,-1).toLowerCase();
+}
+
+function equal(data1, data2) {
+  return data1 == data2;
+}
+
+function strictEqual(data1, data2) {
+  return data1 === data2;
+}
+
+function throwError(type1, type2, err_msg) {
+  err_msg = err_msg || 'defaut error message';
+  if ( isType(type1) != type2 ) { throw new Error(err_msg);}
+}
+
+// function validateData(data, type) {
+//   if ( isType(true)) {}
+// }
 
 
+function errorMsg(message) {
+  if ( isType(message) !== 'string' ){
+    errorMsg('error message needs to be a string type.')
+  }
+  throw new Error(message);
+}
 
+function prevEl(el_node) {
+  if ( el_node.nodeType !== 1 ) {
+    errorMsg('sent node needs to be an element node.')
+  }
+}
 
 
 
