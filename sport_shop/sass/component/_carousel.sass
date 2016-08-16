@@ -1,25 +1,56 @@
-.overflow-hidden
+.carousel-container 
   width: width(8)
-  margin: 
-    left: auto
-    right: auto
+  height: 500px
+  margin-right: auto
+  margin-left: auto
+  box-sizing: border-box
+  white-space: nowrap
   overflow: hidden
+  position: relative
 
 .carousel
-  width: width(30)
-  white-space: nowrap
+  width: 300%
+  height: 500px
 
-.profile-preference
-  background-color: red
-  width: 100/3
+.carousel-items
+  box-sizing: border-box
+  width: 33.3%
   display: inline-block
 
-.social-media-preference
-  width: width(8)
-  float: left
-  display: inline-block
+div 
+  height: 500px
 
-.phone-preference
-  width: width(8)
-  float: left
-  display: inline-block
+.carousel.carousel-move 
+  position: absolute
+  transform: translateX(0px)
+  transition: .5s
+
+.carousel.carousel-move-second 
+  position: absolute
+  transform: translateX(-33.4%)
+  transition: .5s
+
+
+.carousel.carousel-move-third 
+  position: absolute
+  transform: translateX(-67%)
+  transition: .5s
+
+.carousel-button-container
+  margin-right: auto
+  margin-left: auto
+  display: flex
+  justify-content: center
+
+.carousel-button
+  margin: 4px
+  height: 10px
+  width: 10px
+  border-radius: 5px
+  border: none
+  padding: 0
+  background-color: $gray
+
+.carousel-button
+  &:focus
+    background-color: $primary-color
