@@ -6,20 +6,55 @@
   <meta charset="UTF-8">
   <title>자바스크립트 코어</title>
   <style type="text/css">
+    body {
+      margin: 5rem;
+    }
+
     .demo-container {
       margin: 20px 10%;
+    }
+
+    .demo-box {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 80px;
+      left: 80px;
     }
   </style>
 </head>
 <body>
-
+<!-- 
   <div class="demo-container">
     <div class="demo">demo</div>
-    <!-- this is comment. -->
+    this is comment.
     <div class="demo-sibling">demo-sibling</div>
   </div>
+ -->
 
-<script src="../resources/DOM Helper/index.js"></script>
+  <div class="demo-box">
+    demo-box
+  </div>
+
+
+  <nav class="demo-navigation">
+    <ul>
+      <li><a href="#">item 01</a></li>
+      <li><a href="#">item 02</a></li>
+      <li><a href="#">item 03</a></li>
+      <li><a href="#">item 04</a></li>
+    </ul>
+  </nav>
+<!--   <script type="text/javascript" src="../resources/DOM Helper/index.js"></script>
+ -->  <script type="text/javascript" src="js/closure.js"></script>
+<!-- <script src="../resources/DOM Helper/index.js"></script>
+<script type="text/javascript" src="js/js-anime.js"></script> -->
+<!-- <script type="text/javascript" src="js/loop_functions.js"></script>
 <script src="js/loop.js"></script>
-</body>
+ --></body>
 </html>
