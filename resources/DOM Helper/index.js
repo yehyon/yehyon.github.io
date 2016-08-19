@@ -275,6 +275,21 @@ removeUnit.unit = getUnit(value)
 return value.split(getUnit(value))[0]
 }
 
+function makeArray(data) {
+  // 전달된 객체는 배열 또는 유사 배열인가?
+  var check_data = isType(data), result_arr = [], len = data.length;
+  // 실제 배열
+  if (check_data === 'array') {
+    return data;
+  }
+  // 유사 배열
+  if ( len && check_data !== 'string' ) {
+    while( len-- ) {
+      result_arr.push( data[len] );
+    }
+  }
+  return result_arr.reverse();
+}
 
 
 
