@@ -1,36 +1,51 @@
-body.show-grid::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100vh;
-	background-image: linear-gradient(transparent 95% red 95%);
-	background-size: 1px 24px;
+.rectangle {
+  float: left;
+  background: red;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 10%;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
-.page-header {
-	height: 144px;
-	background: #06b1f5;
+.rectangle:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
-.page::before {
-	content: '';
-	display: block;
-	height: 24px;
-background: #039307;
+.rectangle.fade-in {
+  opacity: 1;
 }
 
-.wrapper {
-    width: 940px;
-    height: 96px;
-    margin-right: auto;
-    margin-left: auto;
+
+.square {
+  box-sizing: border-box;
+  float: left;
+  background: red;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  margin: 10%;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateY(50px);
 }
 
-.page-header .brand {
-    float: left;
-    width: 220px;
-    height: 48px;
-    margin-top: 36px;
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

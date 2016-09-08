@@ -1,5 +1,8 @@
 /*! DOMHelper.js © yamoo9.net, 2016 */
 
+// ECMAScript 2015 Syntax
+// var cleanWhiteSpace = ( el=document ) => {
+// ECMAScript 3rd Edition
 function cleanWhilteSpace(el) {
     el = el || document;
     var current_node = el.firstChild;
@@ -39,7 +42,6 @@ function validDate(data, type) {
   return strictEqual( isType(data), type );
 }
 
-
 /**
  * prependChild(부모노드, 자식노드)
  * 부모노드의 첫번째 자식노드로 삽입한다.
@@ -69,39 +71,35 @@ function insertAfter(target_node, insert_node) {
   var parent_node = target_node.parentNode;
   if ( next_node ) { parent_node.insertBefore(insert_node, next_node); }
   else { parent_node.appendChild(insert_node); }
-};
+}
 
-
-
-function queryAll(selector, context) {
-  // var context; // unfined
-  // 유효성 검사
-  // 문자 데이터인지 확인
-  if ( typeof selector !== 'string' ) { throw new Error('전달인자는 문자열만 가능합니다.'); }
-  if ( !context ) { context = document; }
-  return context.querySelectorAll(selector);
-};
-
-function query(selector, context) {
-  return queryAll(selector, context)[0];
-};
-
-function queryItem(selector, context, order) {
-  if (!order) { order = 1 }
-  //second part of if statement is to have the function select an item even when undefined by default
-  //order needs to begin from 1 in order to prevent error happening due to 0 being falsy in an if statement
-  return queryAll(selector, context)[order-1];
-};
-
-function $q(selector, parent, order) {
-  // 초기화
-  // order = order || '';
-  if ( !order ) {
-    return queryAll(selector, parent);
-  } else {
-    return queryItem(selector, parent, order);
+// .querySelectorAll() 메소드를 단축하여 사용할 수 있는 헬퍼 함수
+function queryAll(selector_str, context) {
+  // 사용자가 올바른 데이터를 전달하였는가? 검증
+  if ( typeof selector_str !== 'string') {
+    // 조건이 참이 되면 오류 발생
+    throw new Error('첫번째 전달인자는 문자 유형이어야 합니다.');
   }
-};
+  // context 인자 값을 사용자가 전달하였는가?
+  // 사용자가 context 값을 전달하지 않았을 경우는 undefined 이다.
+  // if (typeof context === 'undefined') {
+  if (!context) { context = document; }
+  return context.querySelectorAll(selector_str);
+}
+
+function query(selector, parent) {
+  return queryAll(selector, parent)[0];
+}
+
+// function $q(selector, hook, context) {
+//   var method;
+//   if ( hook === 1 ) {
+//     method = 'query';
+//   } else {
+//     method = 'queryAll';
+//   }
+//   return window[method](selector, context);
+// }
 
 // 문서 객체(노드)를 제거하는 헬퍼 함수
 function removeNode(node) {
@@ -121,34 +119,60 @@ function createNode(el_name, text) {
 }
 
 
-//Retreiving CSS Style
-// function getStyle(el, property, pseudo) {
-//   var value, el_style;
-//   // 유효성 검사
-//   if ( el.nodeType !== 1 ) {
-//     console.error('첫번째 인자 el은 요소노드여야 합니다.');
-//   }
-//   if ( typeof property !== 'string' ) {
-//     console.error('두번째 인자 property는 문자열이야 합니다.');
-//   }
-//   if ( pseudo && typeof pseudo !== 'string' ) {
-//     console.error('세번째 인자 pseudo는 문자열이야 합니다.');
-//   }
+// ------------------------------------------------
+// 웹 브라우저에서 계산된 CSS 스타일 값 가져오는 방법
+// ------------------------------------------------
+// 비 표준 MS IE 방식 (IE 8-)
+// 대상.currentStyle.스타일속성
+// ------------------------------------------------
+// 표준 W3C 방식 (IE 9+)
+// window.getComputedStyle(대상,가상요소).스타일속성
+// ------------------------------------------------
+function getStyle(el, property, pseudo) {
+  var value, el_style;
+  // 유효성 검사
+  if ( el.nodeType !== 1 ) {
+    console.error('첫번째 인자 el은 요소노드여야 합니다.');
+  }
+  if ( typeof property !== 'string' ) {
+    console.error('두번째 인자 property는 문자열이야 합니다.');
+  }
+  if ( pseudo && typeof pseudo !== 'string' ) {
+    console.error('세번째 인자 pseudo는 문자열이야 합니다.');
+  }
 
- // CSS 속성 이름이 카멜케이스화
-  // property = camelCase(property);
+  // CSS 속성 이름이 카멜케이스화
+  property = camelCase(property);
 
-//   if ( window.getComputedStyle ) {
-//     el_style = window.getComputedStyle(el,pseudo);
-//     if (pseudo && el_style.content === '') {
-//       return null;
-//     }
-//     value = el_style[property];
-//   } else {
-//     value = el.currentStyle[property];
-//   }
-//   return value;
-// }
+  if ( window.getComputedStyle ) {
+    el_style = window.getComputedStyle(el,pseudo);
+    if (pseudo && el_style.content === '') {
+      return null;
+    }
+    value = el_style[property];
+  } else {
+    value = el.currentStyle[property];
+  }
+  return value;
+}
+
+function setStyle(elNode, property, value) {
+  if ( isntElNode(elNode) ) {
+    errorMsg('요소노드가 전달되어야 합니다.');
+  }
+  if (isType(property) !== 'string') {
+    errorMsg('두번째 전달인자는 문자열이어야 합니다.');
+  }
+  elNode.style[property] = value;
+}
+
+function css(elNode, prop, value) {
+  if ( !value ) {
+    return getStyle(elNode, prop);
+  } else {
+    setStyle(elNode, prop, value);
+  }
+}
 
 // ------------------------------------------------
 // 전달된 텍스트를 카멜케이스화하여 반환하는 헬퍼 함수
@@ -157,6 +181,7 @@ function camelCase(text) {
       return $1.replace(/(\s|-|_)/g,'').toUpperCase();
    });
 }
+
 // ------------------------------------------------
 // 오류 메시지를 출력하는 헬퍼 함수
 function errorMsg(message) {
@@ -175,6 +200,27 @@ function isElNode(node) {
 function isntElNode(node) {
   return !isElNode(node);
   // return node.nodeType !== 1;
+}
+
+// ------------------------------------------------
+// 요소노드의 이름이 동일한지, 아닌지 체크하는 헬퍼 함수
+function isElName(node, name) {
+  if ( isntElNode(node) ) { errorMsg('첫번째 인자로 요소노드가 전달되어야 합니다.') }
+  if ( isType(name) !== 'string' ) { errorMsg('두번째 인자로 텍스트 데이터 유형이 전달되어야 합니다.') }
+  return (node.localName || node.nodeName.toLowerCase()) === name;
+}
+function isntElName(node, name) {
+  return !isElName(node, name);
+}
+
+// ------------------------------------------------
+// 텍스트노드의 유형인지, 아닌지 체크하는 함수
+function isTextNode(node) {
+  return node.nodeType === 3;
+}
+function isntTextNode(node) {
+  // return !isTextNode(node);
+  return node.nodeType !== 3;
 }
 
 // ------------------------------------------------
@@ -245,23 +291,15 @@ function _lastEl(node) {
   return children[children.length - 1];
 }
 
-
-var units = 'px em rem % vw vh vmin vmax'.split(' ');;
-var unit;
-var i = 0;
-var l = units.length;
-
-// var demo_container = query('.demo-container');
-// var get_value = getStyle(demo_container, 'margin-bottom');
-
-// console.log(get_value);
-
-function getUnit(value) {
-  var i=0, l=getUnit.units.length,unit;
+// ------------------------------------------------
+// 단위 제거/가져오기/소유하고 있는지 확인
+function getUnit(value){
+  var i=0,l=getUnit.units.length,unit;
   var reg;
   for ( ; i<l; i++ ) {
     unit = getUnit.units[i];
-    if ( value.indexOf(unit) > -1) {
+    if ( value.indexOf(unit) > -1 ) {
+      // break;
       return unit;
     }
   }
@@ -269,12 +307,24 @@ function getUnit(value) {
 }
 getUnit.units = 'px rem em % vw vh vmin vmax'.split(' ');
 
-
+// JavaSCript 함수는 객체이다.
+// 객체는 속성을 가진다.
 function removeUnit(value) {
-removeUnit.unit = getUnit(value)
-return value.split(getUnit(value))[0]
+  removeUnit.unit = getUnit(value);
+  return parseFloat(value, 10);
+}
+removeUnit.unit = null;
+
+function hasUnit(value) {
+  return !!getUnit(value);
 }
 
+// 함수를 작성하는 이유
+// 재사용할 것 같은 코드들....
+// 매번 짜는 것은 비 효율적이다 보니
+// 능률적으로 코드를 처리하기 위해 코드 묶음을
+// 재사용/확장할 수 있도록 처리.
+// 유사 배열을 배열화
 function makeArray(data) {
   // 전달된 객체는 배열 또는 유사 배열인가?
   var check_data = isType(data), result_arr = [], len = data.length;
@@ -291,6 +341,45 @@ function makeArray(data) {
   return result_arr.reverse();
 }
 
+// function convertArray( data ){
+//     if ( Array.from ) {
+//         return Array.from( data );
+//     } else {
+//         return Array.prototype.slice.call(data);
+//     }
+// }
+
+// 1. 정식으로 클로저를 사용하는 방법으로 문제 해결 방법
+function convertArray_wrapper() {
+  // 내부에서 클로저 함수를 반환
+  var closureFn;
+  if ( Array.from ) {
+    // Array.from이 지원되는가?
+    closureFn = function(data) {
+      return Array.from(data);
+    };
+  } else {
+    // 지원되지 않는가?
+    closureFn = function(data) {
+      return Array.prototype.slice.call(data);
+    }
+  }
+  return closureFn;
+}
+
+var convertArray = convertArray_wrapper();
+
+// 2. 약식(IIFE 패턴)을 사용하여 클로저 처리하는 문제 해결 방법
+var convertArray = (function(){
+  if (Array.from) {
+    return function(data) {
+      return Array.from(data);
+    }
+  } else {
+    return function(data) {
+      return Array.prototype.slice.call(data);
+    }
+  }
 
 
-
+})();
