@@ -21,13 +21,6 @@ $bp-sizes: (
 
 $headings: ( h4, h3, h2, h1);
 
-// $headings: ( h1: 3.375em, h2: 2.25em, h3: 1.5em, h4: 1em )
-// @each $heading, $value in $headings
-//   $font-size: nth($value, 1)
-//   #{$heading}
-//     font-size: $font-size
-//     font-family: sans-serif
-
 $lineheight-array: (
   h4: 1.5,
   h3: 1.333,
