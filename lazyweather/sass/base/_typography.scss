@@ -1,0 +1,58 @@
+$breakpoints: (
+  xs: 320px,
+  s: 375px,
+  m: 414px
+);
+
+$bp-sizes: (
+  xs: (
+    base-font-size: 16 * ( 320 / 414 ) * 1px,
+    scale: 1.5
+  ),
+  s: (
+    base-font-size: 16 * ( 375 / 414 ) * 1px,
+    scale: 1.5
+  ),
+  m: (
+    base-font-size: 16px, 
+    scale: 1.5
+  )
+);
+
+$headings: ( h4, h3, h2, h1);
+
+// $headings: ( h1: 3.375em, h2: 2.25em, h3: 1.5em, h4: 1em )
+// @each $heading, $value in $headings
+//   $font-size: nth($value, 1)
+//   #{$heading}
+//     font-size: $font-size
+//     font-family: sans-serif
+
+$lineheight-array: (
+  h4: 1.5,
+  h3: 1.333,
+  h2: 1.778,
+  h1: 1.333
+);
+
+@each $heading, $value in $lineheight-array {
+  $lineheight: nth($value, 1);
+  #{$heading} {
+    line-height: $lineheight;
+    font-family: sans-serif;
+  }
+}
+
+@each $size, $data in $bp-sizes {
+
+  $bsf: get-breakpoint-property(base-font-size, $size);
+  $s: get-breakpoint-property(scale, $size);
+
+  @include breakpoint($size) {
+    @each $label in $headings {
+      #{$label} {
+        @include generate-font-properties($label, $bsf, $s);
+      } 
+    }
+  }
+}
