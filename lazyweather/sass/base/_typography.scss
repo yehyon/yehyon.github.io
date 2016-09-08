@@ -23,9 +23,9 @@ $headings: ( h4, h3, h2, h1);
 
 $lineheight-array: (
   h4: 1.5,
-  h3: 1.333,
+  h3: 32px,
   h2: 1.778,
-  h1: 1.333
+  h1: 72px
 );
 
 @each $heading, $value in $lineheight-array {
