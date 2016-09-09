@@ -7,14 +7,17 @@ $breakpoints: (
 $bp-sizes: (
   xs: (
     base-font-size: 16 * ( 320 / 414 ) * 1px,
+    base-line-height: 1.5,
     scale: 1.5
   ),
   s: (
     base-font-size: 16 * ( 375 / 414 ) * 1px,
+    base-line-height: 1.5,
     scale: 1.5
   ),
   m: (
     base-font-size: 16px, 
+    base-line-height: 1.5,
     scale: 1.5
   )
 );
@@ -23,7 +26,7 @@ $headings: ( h4, h3, h2, h1);
 
 $lineheight-array: (
   h4: 1.5,
-  h3: 32px,
+  h3: 16 / 24 * 2,
   h2: 1.778,
   h1: 72px
 );
@@ -39,12 +42,13 @@ $lineheight-array: (
 @each $size, $data in $bp-sizes {
 
   $bsf: get-breakpoint-property(base-font-size, $size);
+  $blh: get-breakpoint-property(base-line-height, $size);
   $s: get-breakpoint-property(scale, $size);
 
   @include breakpoint($size) {
     @each $label in $headings {
       #{$label} {
-        @include generate-font-properties($label, $bsf, $s);
+        @include generate-font-properties($label, $bsf, $blh, $s);
       } 
     }
   }

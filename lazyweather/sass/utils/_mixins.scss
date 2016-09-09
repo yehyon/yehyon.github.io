@@ -16,11 +16,16 @@
 
 // Typography Mixins
 
-@mixin generate-font-properties($label, $base-font-size, $scale) {
+@mixin generate-font-properties($label, $base-font-size, $base-line-height, $scale) {
   $scale-value: index($headings, $label) - 1;
 
   $fs: $base-font-size * pow($scale, $scale-value);
 
   font-size: $fs;
-}
 
+  @if $fs == $base-font-size {
+    line-height: 1.5;
+  } @else {
+    line-height: $fs * 32 / 24;
+  }
+}
