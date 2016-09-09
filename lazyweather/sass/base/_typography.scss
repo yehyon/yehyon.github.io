@@ -1,3 +1,13 @@
+@font-face {
+  font-family: WeatherAndTime;
+  src: url(../font/weatherandtime/Weather&Time.ttf) format('truetype');
+}
+
+h5 {
+  font-family: WeatherAndTime;
+  font-size: 32px;
+}
+
 $breakpoints: (
   xs: 320px,
   s: 375px,
