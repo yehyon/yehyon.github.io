@@ -1,34 +1,16 @@
 //Breakpoint Mixins
 
 @mixin breakpoint($name) {
-  @if not map-has-key($breakpoints, $name) {
-    @warn "Invalid breakpoint `#{$name}`.";
+  @if map-get($breakpoints, $name) == '' {
+    @content;
   } @else {
-      @if map-get($breakpoints, $name) == '' {
-        @content;
-      } @else {
-        @media (min-width: map-get($breakpoints, $name)) {
-        @content;
-      }
+    @media (min-width: map-get($breakpoints, $name)) {
+    @content;
     }
   }
 }
 
 // Typography Mixins
-
-// @mixin generate-font-properties($label, $base-font-size, $base-line-height, $scale) {
-//   $scale-value: index($headings, $label) - 1;
-
-//   $fs: $base-font-size * pow($scale, $scale-value);
-
-//   font-size: $fs;
-
-//   @if $fs == $base-font-size {
-//     line-height: 1.5;
-//   } @else {
-//     line-height: $fs * 32 / 24;
-//   }
-// }
 
 @mixin generate-font-properties($label, $base-font-size, $base-line-height, $scale) {
   $scale-value: index($headings, $label) - 1;
@@ -37,11 +19,11 @@
   $lh: null;
 
   @if $fs == $base-font-size {
-    $lh: 1.5;
+    $lh: 24px;
   } @else {
-    $lh: $fs * 32 / 24;
+    $lh: round($fs / 6) * 8;
   }
 
-  line-height: $lh;
   font-size: $fs;
+  line-height: $lh;
 }

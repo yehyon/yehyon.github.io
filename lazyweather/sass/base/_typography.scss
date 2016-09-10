@@ -1,18 +1,40 @@
+// Font Link
+
 @font-face {
   font-family: WeatherAndTime;
   src: url(../font/weatherandtime/Weather&Time.ttf) format('truetype');
 }
 
-h5 {
-  font-family: WeatherAndTime;
-  font-size: 32px;
+%libre-thin {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: $thin;
 }
 
-$breakpoints: (
-  xs: 320px,
-  s: 375px,
-  m: 414px
-);
+%libre-light {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: $light;
+}
+
+%libre-medium {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: $medium;
+}
+
+h1 {
+  @extend %libre-thin;
+}
+
+h2 {
+  @extend %libre-light;
+}
+
+h3 {
+  @extend %libre-light;
+}
+
+h4 {
+  @extend %libre-light;
+}
 
 $bp-sizes: (
   xs: (
@@ -34,20 +56,6 @@ $bp-sizes: (
 
 $headings: ( h4, h3, h2, h1);
 
-$lineheight-array: (
-  h4: 1.5,
-  h3: 16 / 24 * 2,
-  h2: 1.778,
-  h1: 72px
-);
-
-@each $heading, $value in $lineheight-array {
-  $lineheight: nth($value, 1);
-  #{$heading} {
-    line-height: $lineheight;
-    font-family: sans-serif;
-  }
-}
 
 @each $size, $data in $bp-sizes {
 
@@ -63,3 +71,14 @@ $lineheight-array: (
     }
   }
 }
+
+h5 {
+  font-family: WeatherAndTime;
+  font-size: 32px;
+}
+
+
+
+
+
+
