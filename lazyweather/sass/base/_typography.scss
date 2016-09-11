@@ -5,35 +5,44 @@
   src: url(../font/weatherandtime/Weather&Time.ttf) format('truetype');
 }
 
-%libre-thin {
-  font-family: 'Libre Franklin', sans-serif;
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/aileron/aileron100.woff) format('woff')
+  }
+
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/aileron/aileron400.woff) format('woff')
+  }
+
+%aileron-thin {
+  font-family: 'Aileron', sans-serif;
   font-weight: $thin;
 }
 
-%libre-light {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: $light;
-}
-
-%libre-medium {
-  font-family: 'Libre Franklin', sans-serif;
+%aileron-medium {
+  font-family: 'Aileron', sans-serif;
   font-weight: $medium;
 }
 
 h1 {
-  @extend %libre-thin;
+  @extend %aileron-thin;
 }
 
 h2 {
-  @extend %libre-light;
+  @extend %aileron-light;
 }
 
 h3 {
-  @extend %libre-light;
+  @extend %aileron-light;
 }
 
 h4 {
-  @extend %libre-light;
+  @extend %aileron-light;
 }
 
 $bp-sizes: (
