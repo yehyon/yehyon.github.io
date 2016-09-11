@@ -19,6 +19,20 @@
   src: url(../font/aileron/aileron400.woff) format('woff')
   }
 
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../font/muli/muli200.woff) format('woff')
+  }
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/muli/muli400.woff) format('woff')
+  }
+
 %aileron-thin {
   font-family: 'Aileron', sans-serif;
   font-weight: $thin;
@@ -29,35 +43,45 @@
   font-weight: $medium;
 }
 
+%muli-light {
+  font-family: 'Muli', sans-serif;
+  font-weight: $light;
+}
+
+%muli-medium {
+  font-family: 'Muli', sans-serif;
+  font-weight: $medium;
+}
+
 h1 {
-  @extend %aileron-thin;
+  @extend %muli-light;
 }
 
 h2 {
-  @extend %aileron-light;
+  @extend %muli-light;
 }
 
 h3 {
-  @extend %aileron-light;
+  @extend %muli-light;
 }
 
 h4 {
-  @extend %aileron-light;
+  @extend %muli-light;
 }
 
 $bp-sizes: (
   xs: (
-    base-font-size: 16 * ( 320 / 414 ) * 1px,
+    base-font-size: 15 * ( 320 / 414 ) * 1px,
     base-line-height: 1.5,
     scale: 1.5
   ),
   s: (
-    base-font-size: 16 * ( 375 / 414 ) * 1px,
+    base-font-size: 15 * ( 375 / 414 ) * 1px,
     base-line-height: 1.5,
     scale: 1.5
   ),
   m: (
-    base-font-size: 16px, 
+    base-font-size: 15px, 
     base-line-height: 1.5,
     scale: 1.5
   )
