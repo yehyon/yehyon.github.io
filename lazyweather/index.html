@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="myApp">
+<html data-ng-app="lazyWeather">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -36,21 +36,31 @@
     </main>
   </div>
 
-  <div class="panel">
+  <div class="panel" data-ng-init="tab = 1" data-ng-controller="TabController as panel">
     <nav class="panel-nav">
-      <h3>Today</h3>
-      <h3>Week</h3>
+      <h3 data-ng-class="{ active:tab === 1}"><a href data-ng-click="tab = 1">Today</a></h3>
+      <h3 data-ng-class="{ active:tab === 2}"><a href data-ng-click="tab = 2">Week</a></h3>
     </nav>
-    <div class="today-weather-table">
+    <div class="today-weather-table" data-ng-show="tab === 1">
       <div class="tweather-label">
         <h4>Time</h4>
         <h4>Forcast</h4>
         <h4>Temperature</h4>
       </div>
-      <div class="tweather-content">
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
+      <div 
+        class="tweather-content" 
+        data-ng-controller="todayWeatherController as lazyWeather"
+      >
+        <h4>{{lazyWeather.todayWeather.time}}</h4>
+        <h5>{{lazyWeather.todayWeather.forcast}}</h5>
+        <h4>{{lazyWeather.todayWeather.temperature}}</h4>
+      </div>
+    </div>
+    <div class="week-weather-table" data-ng-show="tab === 2">
+      <div class="tweather-label">
+        <h4>Time</h4>
+        <h4>Forcast</h4>
+        <h4>Temperature</h4>
       </div>
     </div>
   </div>

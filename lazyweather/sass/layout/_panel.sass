@@ -19,6 +19,13 @@
       left: $column
       top: $baseline * 5
       bottom: $baseline * 5
+    a
+      text-decoration: none
+      color: $dark
+
+.active
+  border-bottom: 1px solid $dark
+  font-weight: 400
 
 
 
@@ -29,5 +36,14 @@
   flex-flow: row
   justify-content: space-between
   margin:
+    left: $gutter + $column
+    right: $gutter + $column
+
+.tweather-content
+  display: flex
+  flex-flow: row
+  justify-content: space-between
+  margin:
+    top: $baseline * 4
     left: $gutter + $column
     right: $gutter + $column
