@@ -8,25 +8,26 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers/CurrentWthController.js"></script>
+  <script src="js/controllers/WeekWthController.js"></script>
 </head>
 <body>
 
   <div class="mainview" data-ng-controller="CurrentWthController as lazyWeatherCtrl">
     <header>
       <div class="location">
-        <h3>{{lazyWeatherCtrl.currentWeather.name}} , Korea</h3>
+        <h3>Seoul, Korea</h3>
       </div>
       <div class="time-date">
         <h4>Tuesday, 11:41AM</h4>
       </div>
       <div class="temperature">
         <div class="current-temperature">
-          <h5>C</h5>
+          <h5>{{lazyWeatherCtrl.currentWeather.weather[0].main}}</h5>
           <h3>{{lazyWeatherCtrl.currentWeather.main.temp - 273.15}}°c</h3>
         </div>
         <div class="temperature-hi-lo">
           <h4>High Low</h4>
-          <h3>{{lazyWeatherCtrl.currentWeather.main.temp_max - 273.15}}°c / {{lazyWeatherCtrl.currentWeather.main.temp_min - 273.15}}°c</h3>
+          <h3>{{lazyWeatherCtrl.currentWeather.main.temp_max - 273.15}}°c / {{lazyWeatherCtrl.currentWeather.main.temp_min - 273.15| number:0}}°c</h3>
         </div>
       </div>
     </header>
@@ -63,6 +64,21 @@
         <h4>Forcast</h4>
         <h4>Temperature</h4>
       </div>
+      <div 
+        data-ng-controller="WeekWthController as weekWeatherCtrl"
+      >
+        <ul>
+          <li 
+            class="wweather-content" 
+            data-ng-repeat="(index, obj) in weekWeatherCtrl.weekWeather.list">
+            <div>{{ obj.dt.yyyy_mm_dd | date}} | {{obj.dt.day}}</div>
+            <div>{{obj.weather[0].main}}</div>
+            <div>{{obj.temp.day - 273.15 | number:0}}°c</div>
+          </li>
+          <!-- <li><h4>{{weekWeatherCtrl.weekWeather.list[0].dt | date:'medium'}}</h4></li>
+          <li><h4>{{weekWeatherCtrl.weekWeather.list[0].weather[0].main}}</h4></li>
+          <li><h4>{{weekWeatherCtrl.weekWeather.list[0].temp.day}}</h4></li> -->
+        </ul>
     </div>
   </div>
 
