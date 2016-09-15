@@ -3,28 +3,7 @@
 
   var lazyWeather = angular.module('lazyWeather');
 
-  lazyWeather.factory('convertDate', [function(){
-    var week = 'sun mon tues wednes thurs fri sat'.split(' ');
-    return function(timestamp){
-      if(!timestamp) {
-        console.error('timestamp 값을 전달해야 합니다.');
-      }
-      var d = new Date( timestamp * 1000);
-      var yyyy = d.getFullYear();
-      var mm = d.getMonth()+1;
-      mm = mm > 10 ? mm : '0' + mm;
-      var dd = d.getDate() + 1;
-      dd = dd > 10 ? dd : '0' + dd;
-      var day = week[ d.getDay() ] + 'day';
-
-      return {
-        'yyyy_mm_dd': yyyy + '-' + mm + '-' + dd,
-        'day': day
-      };
-    };
-  }]);
-
-  lazyWeather.controller('WeekWthController', ['$http', 'convertDate', function($http, convertDate) {
+  lazyWeather.controller('WeekWthController', ['$http', 'convertDate', 'convertIcon', function($http, convertDate, convertIcon) {
     var lazyWeatherWeek = this;
 
     lazyWeatherWeek.weekWeather = [];
@@ -37,6 +16,9 @@
       lazyWeatherWeek.weekWeather = response.data;
       angular.forEach(response.data.list, function(item, index) {
         item.dt = convertDate(item.dt);
+      });
+      angular.forEach(response.data.list, function(item, index) {
+        item.weather[0].main = convertIcon(item.weather[0].main);
       });
     }
     function errorAjax(response) {

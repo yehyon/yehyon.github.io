@@ -3,7 +3,7 @@
 
   var lazyWeather = angular.module('lazyWeather');
 
-  lazyWeather.controller('CurrentWthController', ['$http', function($http) {
+  lazyWeather.controller('CurrentWthController', ['$http', 'convertDate', 'convertIcon', function($http, convertDate, convertIcon) {
     var lazyWeatherCurrent = this;
 
     lazyWeatherCurrent.currentWeather = [];
@@ -14,6 +14,8 @@
     }).then(successAjax, errorAjax);
     function successAjax(response) {
       lazyWeatherCurrent.currentWeather = response.data;
+      response.data.dt = new Date();
+      response.data.weather[0].main = convertIcon(response.data.weather[0].main);
     }
     function errorAjax(response) {
       console.log()
