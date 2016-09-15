@@ -16,6 +16,8 @@
         weatherdescription = 'R';
       } if (weatherdescription == 'Haze') {
         weatherdescription = 'O';
+      } if (weatherdescription == 'Mist') {
+        weatherdescription = 'E';
       }
       return {
         'weathericon': weatherdescription

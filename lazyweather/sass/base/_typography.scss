@@ -6,20 +6,6 @@
 }
 
 @font-face {
-  font-family: 'Aileron';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../font/aileron/aileron100.woff) format('woff')
-  }
-
-@font-face {
-  font-family: 'Aileron';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/aileron/aileron400.woff) format('woff')
-  }
-
-@font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 200;
@@ -33,15 +19,6 @@
   src: url(../font/muli/muli400.woff) format('woff')
   }
 
-%aileron-thin {
-  font-family: 'Aileron', sans-serif;
-  font-weight: $thin;
-}
-
-%aileron-medium {
-  font-family: 'Aileron', sans-serif;
-  font-weight: $medium;
-}
 
 %muli-light {
   font-family: 'Muli', sans-serif;
@@ -107,7 +84,7 @@ $headings: ( h4, h3, h2, h1);
 
 h5 {
   font-family: WeatherAndTime;
-  font-size: 32px;
+  font-size: 28px;
   margin-top: 4px;
 }
 
