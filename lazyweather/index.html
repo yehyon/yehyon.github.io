@@ -49,38 +49,40 @@
       <h3><a data-ng-click="shift='right'">Today</a></h3>
       <h3><a data-ng-click="shift='left'">Week</a></h3>
     </nav>
-    <div data-ng-class="shift" class="carousel-container">
-      <div class="today-weather-table table">
-        <div class="tweather-label">
-          <h4>Time</h4>
-          <h4>Forcast</h4>
-          <h4>Temperature</h4>
+    <div class="scroll-container">
+      <div data-ng-class="shift" class="carousel-container">
+        <div class="today-weather-table table">
+          <div class="tweather-label">
+            <h4>Time</h4>
+            <h4>Forcast</h4>
+            <h4>Temperature</h4>
+          </div>
+          <div 
+            class="tweather-content" 
+            data-ng-controller="todayWeatherController as lazyWeather"
+          >
+            <h4>{{lazyWeather.todayWeather.time}}</h4>
+            <h5>{{lazyWeather.todayWeather.forcast}}</h5>
+            <h4>{{lazyWeather.todayWeather.temperature}}</h4>
+          </div>
         </div>
-        <div 
-          class="tweather-content" 
-          data-ng-controller="todayWeatherController as lazyWeather"
-        >
-          <h4>{{lazyWeather.todayWeather.time}}</h4>
-          <h5>{{lazyWeather.todayWeather.forcast}}</h5>
-          <h4>{{lazyWeather.todayWeather.temperature}}</h4>
+        <div class="week-weather-table table">
+          <div class="tweather-label">
+            <h4>Time</h4>
+            <h4>Forcast</h4>
+            <h4>Temperature</h4>
+          </div>
+          <div data-ng-controller="WeekWthController as weekWeatherCtrl">
+            <ul>
+              <li 
+                class="wweather-content" 
+                data-ng-repeat="(index, obj) in weekWeatherCtrl.weekWeather.list">
+                <div><h4>{{ obj.dt.yyyy_mm_dd | date:'MMM dd'}}, {{obj.dt.day}}</h4></div>
+                <div><h5>{{obj.weather[0].main.weathericon}}</h5></div>
+                <div><h4>{{obj.temp.day - 273.15 | number:1}}°c</h4></div>
+              </li>
+            </ul>
         </div>
-      </div>
-      <div class="week-weather-table table">
-        <div class="tweather-label">
-          <h4>Time</h4>
-          <h4>Forcast</h4>
-          <h4>Temperature</h4>
-        </div>
-        <div data-ng-controller="WeekWthController as weekWeatherCtrl">
-          <ul>
-            <li 
-              class="wweather-content" 
-              data-ng-repeat="(index, obj) in weekWeatherCtrl.weekWeather.list">
-              <div><h4>{{ obj.dt.yyyy_mm_dd | date:'MMM dd'}}, {{obj.dt.day}}</h4></div>
-              <div><h5>{{obj.weather[0].main.weathericon}}</h5></div>
-              <div><h4>{{obj.temp.day - 273.15 | number:1}}°c</h4></div>
-            </li>
-          </ul>
       </div>
     </div>
   </div>
