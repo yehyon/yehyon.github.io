@@ -29,7 +29,7 @@
         </div>
         <div class="right-side">
           <div class="temperature-hi-lo">
-            <h4>Humidity</h4>
+            <h4>Humidity: {{lazyWeatherCtrl.currentWeather.main.humidity}}%</h4>
             <h3>{{lazyWeatherCtrl.currentWeather.weather[0].description}}</h3>
           </div>
         </div>
@@ -75,7 +75,7 @@
           <li 
             class="wweather-content" 
             data-ng-repeat="(index, obj) in weekWeatherCtrl.weekWeather.list">
-            <div><h4>{{ obj.dt.yyyy_mm_dd | date:'MMM-dd'}}, {{obj.dt.day}}</h4></div>
+            <div><h4>{{ obj.dt.yyyy_mm_dd | date:'MMM dd'}}, {{obj.dt.day}}</h4></div>
             <div><h5>{{obj.weather[0].main.weathericon}}</h5></div>
             <div><h4>{{obj.temp.day - 273.15 | number:1}}°c</h4></div>
           </li>
