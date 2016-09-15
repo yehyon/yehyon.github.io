@@ -15,19 +15,39 @@ main
     top: $baseline * 16
 
 
+// .current-temperature
+//   display: flex
+//   flex-flow: row
+//   margin:
+//     top: $baseline * 1
+//   h5
+//     margin:
+//       right: $gutter * 2
+
+// .temperature-hi-lo
+//   position: absolute
+//   top: $baseline * 8
+//   right: $gutter + $column
+//   h3
+//     margin:
+//       top: $baseline * 1
+
+.left-side
+  float: left
+
 .current-temperature
   display: flex
   flex-flow: row
   margin:
-    top: $baseline * 1
+    top: $baseline
   h5
     margin:
-      right: $gutter * 2
+      right: $gutter * 4
+
+.right-side
+  float: right
 
 .temperature-hi-lo
-  position: absolute
-  top: $baseline * 8
-  right: $gutter + $column
+  text-align: right
   h3
-    margin:
-      top: $baseline * 1
+    margin-top: $baseline

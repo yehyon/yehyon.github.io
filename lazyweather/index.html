@@ -19,17 +19,19 @@
       <div class="location">
         <h3>Seoul, Korea</h3>
       </div>
-      <div class="time-date">
-        <h4 id="current-time">{{lazyWeatherCtrl.currentWeather.dt | date: medium }}</h4>
-      </div>
-      <div class="temperature">
-        <div class="current-temperature">
-          <h5>{{lazyWeatherCtrl.currentWeather.weather[0].main.weathericon}}</h5>
-          <h3>{{lazyWeatherCtrl.currentWeather.main.temp - 273.15 | number:1}}°c</h3>
+      <div class="second-group">
+        <div class="left-side">
+          <h4>{{lazyWeatherCtrl.currentWeather.dt | date: medium }}</h4>
+          <div class="current-temperature">
+            <h5>{{lazyWeatherCtrl.currentWeather.weather[0].main.weathericon}}</h5>
+            <h3>{{lazyWeatherCtrl.currentWeather.main.temp - 273.15 | number:1}}°c</h3>
+          </div>
         </div>
-        <div class="temperature-hi-lo">
-          <h4>High Low</h4>
-          <h3>{{lazyWeatherCtrl.currentWeather.main.temp_max - 273.15| number:0}}°c / {{lazyWeatherCtrl.currentWeather.main.temp_min - 273.15| number:0}}°c</h3>
+        <div class="right-side">
+          <div class="temperature-hi-lo">
+            <h4>Humidity</h4>
+            <h3>{{lazyWeatherCtrl.currentWeather.weather[0].description}}</h3>
+          </div>
         </div>
       </div>
     </header>
