@@ -2,7 +2,7 @@
   'use strict';
   // var apiKey = b87a29cdc2db8cd57d8d8c85ca8c4fd8
 
-  var lazyWeather = angular.module('lazyWeather', []);
+  var lazyWeather = angular.module('lazyWeather', ['ngAnimate']);
 
   lazyWeather.controller('todayWeatherController', function(){
     this.todayWeather = todayData;
@@ -25,6 +25,7 @@
       return this.tab === checkTab;
     };
   });
+
 
 
 })(this, this.angular);

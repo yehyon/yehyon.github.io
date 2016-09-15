@@ -14,7 +14,7 @@
     }).then(successAjax, errorAjax);
     function successAjax(response) {
       lazyWeatherCurrent.currentWeather = response.data;
-      console.log(response.data);
+      // console.log(response.data);
       response.data.weather[0].main = convertIcon(response.data.weather[0].main);
       response.data.dt = new Date();
     }

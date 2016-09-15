@@ -10,10 +10,11 @@
 
     $http({
       'method': 'GET',
-      'url': 'http://api.openweathermap.org/data/2.5/forecast/daily?id=1835847&cnt=&APPID=b87a29cdc2db8cd57d8d8c85ca8c4fd8'
+      'url': 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Seoul&cnt=7&APPID=b87a29cdc2db8cd57d8d8c85ca8c4fd8'
     }).then(successAjax, errorAjax);
     function successAjax(response) {
       lazyWeatherWeek.weekWeather = response.data;
+      console.log(response);
       angular.forEach(response.data.list, function(item, index) {
         item.dt = convertDate(item.dt);
       });

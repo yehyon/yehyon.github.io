@@ -1,10 +1,10 @@
 .panel
-  width: 100%
+  width: 100vw
   opacity: 0.95
   background: #FFFFFF
   box-shadow: 0px -3px 5px 0px rgba(27,52,63,0.17)
   position: absolute
-  top: $baseline * 9
+  top: $baseline * 70
   overflow: hidden
 
 
@@ -25,9 +25,25 @@
 
 .active
   border-bottom: 1px solid $dark
+  opacity: 1
   transition: all 3s ease
 
+.carousel-container
+  width: 200%
+  display: flex
+  flex-flow: row
 
+.right
+  transform: translateX(0)
+  transition: .6s ease
+
+
+.left
+  transform: translateX(-50%)
+  transition: .6s ease
+
+.table
+  width: 50%
 
 .tweather-label
   border-bottom: 1px solid $light-gray

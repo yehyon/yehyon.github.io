@@ -6,6 +6,7 @@
   <title>Lazy Weather</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http:////ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
   <script src="js/app.js"></script>
   <script src="js/factories/covertDate.js"></script>
   <script src="js/factories/convertIcon.js"></script>
@@ -42,7 +43,49 @@
     </main>
   </div>
 
-  <div class="panel" data-ng-init="tab = 1" data-ng-controller="TabController as table">
+  <div class="panel">
+    <nav class="panel-nav">
+      <h3><a data-ng-click="shift='right'">Today</a></h3>
+      <h3><a data-ng-click="shift='left'">Week</a></h3>
+    </nav>
+    <div data-ng-class="shift" class="carousel-container">
+      <div class="today-weather-table table">
+        <div class="tweather-label">
+          <h4>Time</h4>
+          <h4>Forcast</h4>
+          <h4>Temperature</h4>
+        </div>
+        <div 
+          class="tweather-content" 
+          data-ng-controller="todayWeatherController as lazyWeather"
+        >
+          <h4>{{lazyWeather.todayWeather.time}}</h4>
+          <h5>{{lazyWeather.todayWeather.forcast}}</h5>
+          <h4>{{lazyWeather.todayWeather.temperature}}</h4>
+        </div>
+      </div>
+      <div class="week-weather-table table">
+        <div class="tweather-label">
+          <h4>Time</h4>
+          <h4>Forcast</h4>
+          <h4>Temperature</h4>
+        </div>
+        <div data-ng-controller="WeekWthController as weekWeatherCtrl">
+          <ul>
+            <li 
+              class="wweather-content" 
+              data-ng-repeat="(index, obj) in weekWeatherCtrl.weekWeather.list">
+              <div><h4>{{ obj.dt.yyyy_mm_dd | date:'MMM dd'}}, {{obj.dt.day}}</h4></div>
+              <div><h5>{{obj.weather[0].main.weathericon}}</h5></div>
+              <div><h4>{{obj.temp.day - 273.15 | number:1}}°c</h4></div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+<!--   <div class="panel" data-ng-init="tab = 1" data-ng-controller="TabController as table">
     <nav class="panel-nav">
       <h3 data-ng-class="{ active: table.isSelected(1)}"><a href data-ng-click="table.selectTab(1)">Today</a></h3>
       <h3 data-ng-class="{ active: table.isSelected(2)}"><a href data-ng-click="table.selectTab(2)">Week</a></h3>
@@ -62,7 +105,8 @@
         <h4>{{lazyWeather.todayWeather.temperature}}</h4>
       </div>
     </div>
-    <div class="week-weather-table table" data-ng-show="table.isSelected(2)">
+    <div class="week-weather-table table fade" 
+    data-ng-show="table.isSelected(2)">
       <div class="tweather-label">
         <h4>Time</h4>
         <h4>Forcast</h4>
@@ -79,12 +123,9 @@
             <div><h5>{{obj.weather[0].main.weathericon}}</h5></div>
             <div><h4>{{obj.temp.day - 273.15 | number:1}}°c</h4></div>
           </li>
-          <!-- <li><h4>{{weekWeatherCtrl.weekWeather.list[0].dt | date:'medium'}}</h4></li>
-          <li><h4>{{weekWeatherCtrl.weekWeather.list[0].weather[0].main}}</h4></li>
-          <li><h4>{{weekWeatherCtrl.weekWeather.list[0].temp.day}}</h4></li> -->
         </ul>
     </div>
-  </div>
+  </div> -->
 
 </body>
 </html>
