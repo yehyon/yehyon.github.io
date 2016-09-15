@@ -10,12 +10,13 @@
 
     $http({
       'method': 'GET',
-      'url': 'http://api.openweathermap.org/data/2.5/weather?id=1835847&APPID=b87a29cdc2db8cd57d8d8c85ca8c4fd8'
+      'url': 'http://api.openweathermap.org/data/2.5/weather?q=Seoul&APPID=b87a29cdc2db8cd57d8d8c85ca8c4fd8'
     }).then(successAjax, errorAjax);
     function successAjax(response) {
       lazyWeatherCurrent.currentWeather = response.data;
-      response.data.dt = new Date();
+      console.log(response.data);
       response.data.weather[0].main = convertIcon(response.data.weather[0].main);
+      response.data.dt = new Date();
     }
     function errorAjax(response) {
       console.log()
