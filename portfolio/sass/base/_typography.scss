@@ -62,6 +62,14 @@ h4 {
   @extend %muli-light;
 }
 
+h5 {
+  @extend %muli-medium;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px
+}
+
+
 $bp-sizes: (
   xs: (
     base-font-size: 15 * ( 320 / 414 ) * 1px,
@@ -80,7 +88,7 @@ $bp-sizes: (
   )
 );
 
-$headings: ( h4, h3, h2, h1);
+$headings: (h4, h3, h2, h1);
 
 
 @each $size, $data in $bp-sizes {
