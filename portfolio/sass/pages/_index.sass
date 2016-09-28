@@ -1,13 +1,17 @@
 body
   max-width: 1024px
   margin: auto
-  height: 100vh
   position: relative
+
+.index
+  height: 100vh
+
+
 
 nav
   height: 60px
   background: #FFFFFF
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.17)
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.17)
   padding:
     left: 5%
     right: 5%
@@ -22,15 +26,23 @@ nav
   float: left
   line-height: 60px
   font-weight: bolder
+  font-size: 20px
 
 
 .nav
   line-height: 60px
   text-decoration: none
   color: black
+  transition: .2s linear
+  &:hover
+    color: red
+  &:selected
+    color: red
 
+.nav.work
+  color: red
 
-main
+.intro
   position: absolute
   top: 50%
   transform: translateY(-50%)
