@@ -1,3 +1,31 @@
 .faq
 	background-color: $blueberry
 	color: #fff
+
+.flex-container
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.unit
+	width: 45%
+
+.question
+	margin-bottom: 20px
+	margin-top: 48px
+
+.answer
+	font-family: 'Montserrat', sans-serif
+	font-weight: 200
+	font-size: 15px
+	line-height: 25px
+	letter-spacing: 0.04em
+	color: #fff
+	position: relative
+	padding-left: 32px
+	&::before
+		content: 'A :'
+		font-size: 20px
+		position: absolute
+		top: 0
+		left: 0px
