@@ -11,6 +11,13 @@
 	font-weight: 300
 	font-size: 20px
 	line-height: 30px
+	a
+		text-decoration: none
+		color: #000
+		transition: all 0.3s ease
+		&:hover
+			transition: all 0.3s ease
+			color: $rust
 
 .images
 	width: 100%
@@ -18,6 +25,11 @@
 	border-radius: 1000px
 	background-color: #fff
 	margin-bottom: 16px
+	box-sizing: border-box
+	transition: all 0.3s ease
+	&:hover
+		border: 4px solid $rust
+		transition: all 0.3s ease
 
 .image-flex
 	justify-content: space-around
