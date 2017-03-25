@@ -1,17 +1,31 @@
 body
-  max-width: 1024px
-  margin: auto
+  width: 100%
   position: relative
+
 
 .index
   height: 100vh
 
 
-
-nav
+.nav-wrapper
+  position: fixed
+  width: 100%
+  z-index: 5
   height: 60px
   background: #FFFFFF
-  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.17)
+  box-shadow: 0px 3px 2px 1px rgba(0,0,0,0.17)
+
+.second-nav-wrapper
+  max-width: 1024px
+  margin: auto
+  height: 100%
+
+
+
+nav
+  height: 100%
+  margin: auto
+  position: relative
   padding:
     left: 5%
     right: 5%
@@ -42,16 +56,31 @@ nav
 .nav.work
   color: $lime
 
+.wrapper
+  margin: auto
+  position: relative
+  height: 100%
+
+
+main
+  max-width: 1024px
+  height: 100%
+  margin: auto
+  position: relative
+
 .intro
   position: absolute
+  margin: auto
   top: 50%
   transform: translateY(-50%)
   padding:
     left: 5%
     right: 5%
 
+
 .introtext
   line-height: 40px
+  margin: auto
 
 .email
   color: $lime
