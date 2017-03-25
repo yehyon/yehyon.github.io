@@ -1,73 +1,8 @@
-// @font-face {
-//   font-family: 'Muli';
-//   font-style: normal;
-//   font-weight: 200;
-//   src: url(../font/muli/muli200.woff) format('woff')
-//   }
-
-// @font-face {
-//   font-family: 'Muli';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url(../font/muli/muli400.woff) format('woff')
-//   }
-
-// @font-face {
-//   font-family: 'Muli';
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url(../font/muli/muli600.woff) format('woff')
-//   }
-
-// @font-face {
-//   font-family: 'Muli';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url(../font/muli/muli700.woff) format('woff')
-//   }
-
-// %muli-light {
-//   font-family: 'Muli', sans-serif;
-//   font-weight: $light;
-// }
-
-// %muli-medium {
-//   font-family: 'Muli', sans-serif;
-//   font-weight: $medium;
-// }
-
-// %muli-heavy {
-//   font-family: 'Muli', sans-serif;
-//   font-weight: 600;
-// }
-
-// %muli-black {
-//   font-family: 'Muli', sans-serif;
-//   font-weight: 700;
-// }
-
-// h1 {
-//   @extend %muli-light;
-// }
-
-// h2 {
-//   @extend %muli-light;
-// }
-
-// h3 {
-//   @extend %muli-light;
-// }
-
-// h4 {
-//   @extend %muli-light;
-// }
-
-// h5 {
-//   @extend %muli-medium;
-//   font-size: 12px;
-//   text-align: center;
-//   line-height: 40px
-// }
+h5 {
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px
+}
 
 
 $bp-sizes: (
