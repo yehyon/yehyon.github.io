@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <script src="https://use.typekit.net/txl5hjn.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/txl5hjn.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <title>Welcome to yehyon's website</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -16,12 +17,11 @@
   <div class="nav-wrapper">
     <div class="second-nav-wrapper">
       <nav>
-        <h1 class="title">Yehyon Chung</h1>
+        <div class="logo"><a href="index.html" class="logosize"><img src="assets/logo.svg"></a></div>
         <ul>
-          <li><h4><a href="pages/work.html" class="nav">Work</a></h4></li>
-          <li><h4><a href="pages/coding.html" class="nav">Coding</a></h4></li>
-          <li><h4><a href="pages/fun.html" class="nav">Fun</a></h4></li>
-          <li><h4><a href="pages/resume.html" class="nav">Resume</a></h4></li>
+          <li><a href="pages/work.html" class="nav">Work</a></li>
+          <li><a href="pages/fun.html" class="nav">Fun</a></li>
+          <li><a href="https://indd.adobe.com/view/f8835b6c-bdbc-4dc9-91c0-73a04de13745" class="nav" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -29,12 +29,25 @@
   <div class="wrapper">
     <main>
       <div class="intro">
-        <h3 class="introtext font-weight-regular">
-          Hello I'm Yehyon. I'm a product designer. Always looking for fun new projects to work on so don't be shy to reach out to me! Continue scrolling down to see projects that I've worked on recently but there's more intersting stuff tucked away in the main navigation too so please take the extra time to explore those parts of my website too. I've spent too much fucking time building this thing you know... 
-        </h3>
+        <h1 class="introtext font-weight-regular">
+          Hi I’m Yehyon. <br> I am a product designer from New York and Seoul. I’ve worked at Poptip, Palantir and currently at <a href="https://www.rocketpunch.com/" class="weblink" target="_blank"> Rocketpunch</a>.  
+        </h1>
       </div>
+      <div class="projectcatalogue">
+        <div class="projectrow">
+          <div class="projectpreview"><a href="pages/work/poptip_qustions.html"><img src="assets/questions_thumbnail.jpg"></a></div>
+          <div class="projectpreview"><img src="assets/questions_thumbnail.jpg"></div>
+        </div>
+        <div class="projectrow">
+          <div class="projectpreview"><img src="assets/questions_thumbnail.jpg"></div>
+          <div class="projectpreview"><img src="assets/questions_thumbnail.jpg"></div>
+        </div>
+      </div>
+      <div class="footer"><div class="copyright">2019 © Crafted by Yehyon Chung</div></div>
     </main>
   </div>
+
+
 
 </body>
 </html>

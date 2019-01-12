@@ -1,0 +1,15 @@
+{
+  "name": "yehyon",
+  "version": "1.0.0",
+  "description": "portfolio website '18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "sydney"
+  ],
+  "author": "yehyon",
+  "license": "ISC"
+}
