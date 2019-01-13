@@ -11,13 +11,18 @@ h5 {
 
 
 $bp-sizes: (
+  xxs: (
+    base-font-size: 15 * ( 250 / 540 ) * 1px,
+    base-line-height: 1.5,
+    scale: 1.5
+  ),
   xs: (
-    base-font-size: 15 * ( 320 / 414 ) * 1px,
+    base-font-size: 15 * ( 250 / 540 ) * 1px,
     base-line-height: 1.5,
     scale: 1.5
   ),
   s: (
-    base-font-size: 15 * ( 375 / 414 ) * 1px,
+    base-font-size: 15 * ( 340 / 540 ) * 1px,
     base-line-height: 1.5,
     scale: 1.5
   ),

@@ -81,6 +81,10 @@ main
   padding:
     left: 5%
     right: 5%
+@media screen and (max-width: 500px)
+  .intro
+    padding-top: 40%
+
 
 
 .introtext
@@ -89,7 +93,10 @@ main
 
 .weblink
   text-decoration: none
-  color: $primary
+  background: -webkit-linear-gradient(#FF78BA, $primary)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  //color: $primary
   transition: all .3s ease-out
   &:hover
     transition: all .3s ease-out
