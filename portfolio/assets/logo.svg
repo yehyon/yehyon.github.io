@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>Combined Shape</title>
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="13.9198985%" x2="50%" y2="100%" id="linearGradient-1">
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF4157" offset="0%"></stop>
+            <stop stop-color="#FF2F36" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="13.9198985%" x2="50%" y2="100%" id="linearGradient-2">
             <stop stop-color="#FF78BA" offset="0%"></stop>
             <stop stop-color="#FF2626" offset="100%"></stop>
         </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6949061%" id="linearGradient-3">
+            <stop stop-color="#FF6392" offset="0%"></stop>
+            <stop stop-color="#FF4156" offset="100%"></stop>
+        </linearGradient>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="GNB/Home" transform="translate(-170.000000, -33.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+        <g id="GNB/Home" transform="translate(-170.000000, -33.000000)" fill-rule="nonzero">
             <g id="Group" transform="translate(170.000000, 33.000000)">
-                <path d="M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 Z M31.5479897,13.330601 C29.242205,9.34676539 24.9340878,6.66666667 20,6.66666667 C15.0606213,6.66666667 10.2695288,10.1822861 8.44459956,13.3434213 C8.42762112,13.3728313 12.2794213,17.8139131 20,26.6666667 C27.7036066,17.7845031 31.5529366,13.3391479 31.5479897,13.330601 Z" id="Combined-Shape"></path>
+                <path d="M20,36 L20,29" id="Path-2" stroke="url(#linearGradient-1)" stroke-width="3" fill="#FF333D"></path>
+                <path d="M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 Z M20,33 C27.1797017,33 33,27.1797017 33,20 C33,17.45973 32.271395,15.0896349 31.0117646,13.0872943 C31.0039215,13.0748268 27.3333333,17.0457287 20,25 C12.6956983,17 9.03568229,13.0123771 9.01995185,13.0371313 C7.74084353,15.0500018 7,17.4384843 7,20 C7,27.1797017 12.8202983,33 20,33 Z M20,17 C24.6606621,11.6918773 27.0010509,9.04428259 27.0211661,9.05721581 C26.3847366,8.6480204 25.7102867,8.29282954 25.0042896,7.99811645 C23.4639542,7.35511522 21.7734479,7 20,7 C18.2282618,7 16.5393054,7.35443085 15.0001657,7.99625758 C14.3037332,8.28667243 13.6379741,8.63592863 13.0090986,9.03781598 C12.9888606,9.0507492 15.3191611,11.7048105 20,17 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                <polyline id="Path" stroke="url(#linearGradient-3)" stroke-width="4" points="6 17 20 32 34 17"></polyline>
             </g>
         </g>
     </g>
