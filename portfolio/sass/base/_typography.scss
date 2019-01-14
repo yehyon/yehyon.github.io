@@ -16,8 +16,8 @@ h5 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.7rem;
+  font-size: 17px;
+  line-height: 1.9rem;
 }
 
 
@@ -77,6 +77,23 @@ $headings: (h6, h3, h2, h1);
   font-weight: 700;
 }
 
+.text-color-white {
+  color: #fff;
+}
 
+.text-color-blue {
+  color: #72AAFF;
+}
 
-
+.quote {
+  font-style: italic;
+  font-family: calibri, san-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 540px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
