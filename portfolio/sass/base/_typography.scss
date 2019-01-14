@@ -3,6 +3,11 @@ h1, h2, h3, h4, h5, p {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
 h5 {
   font-size: 14px;
   text-align: center;
@@ -39,7 +44,7 @@ $bp-sizes: (
   )
 );
 
-$headings: (h4, h3, h2, h1);
+$headings: (h6, h3, h2, h1);
 
 
 @each $size, $data in $bp-sizes {
