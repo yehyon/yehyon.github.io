@@ -1,5 +1,8 @@
 .image_half
-  width: 46%
+  width: 44%
+@media screen and (max-width: 800px)
+  .image_half
+    width: 100%
 
 .image_shadow
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.17)
@@ -8,6 +11,7 @@
 .flex-container
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
 
 .flex-center
   display: flex
