@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>Group Copy 3</title>
+    <title>Group Copy 4</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="13.9198985%" x2="50%" y2="99.797861%" id="linearGradient-1">
-            <stop stop-color="#74EBD5" offset="0%"></stop>
-            <stop stop-color="#ACB6E5" offset="100%"></stop>
+        <linearGradient x1="50%" y1="99.797861%" x2="50%" y2="13.9198985%" id="linearGradient-1">
+            <stop stop-color="#7F7FD5" offset="0%"></stop>
+            <stop stop-color="#86A8E7" offset="52.777276%"></stop>
+            <stop stop-color="#91EAE4" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="2.27082075%" x2="50%" y2="98.6949061%" id="linearGradient-2">
-            <stop stop-color="#82DDD9" offset="0%"></stop>
-            <stop stop-color="#A1C1E2" offset="100%"></stop>
+            <stop stop-color="#8BC6E6" offset="0%"></stop>
+            <stop stop-color="#89BAE6" offset="9.24855491%"></stop>
+            <stop stop-color="#818CDB" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="GNB/Home" transform="translate(-223.000000, -33.000000)" fill-rule="nonzero">
-            <g id="Group-Copy-3" transform="translate(223.000000, 33.000000)">
+        <g id="GNB/Home" transform="translate(-349.000000, -33.000000)" fill-rule="nonzero">
+            <g id="Group-Copy-4" transform="translate(349.000000, 33.000000)">
                 <path d="M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 Z M20,33 C27.1797017,33 33,27.1797017 33,20 C33,17.45973 32.271395,15.0896349 31.0117646,13.0872943 C31.0039215,13.0748268 27.3333333,16.5894732 20,23.6312335 C12.6956983,16.5437445 9.03568229,13.0123771 9.01995185,13.0371313 C7.74084353,15.0500018 7,17.4384843 7,20 C7,27.1797017 12.8202983,33 20,33 Z M20,16 C24.6606621,11.358544 27.0010509,9.04428259 27.0211661,9.05721581 C26.3847366,8.6480204 25.7102867,8.29282954 25.0042896,7.99811645 C23.4639542,7.35511522 21.7734479,7 20,7 C18.2282618,7 16.5393054,7.35443085 15.0001657,7.99625758 C14.3037332,8.28667243 13.6379741,8.63592863 13.0090986,9.03781598 C12.9888606,9.0507492 15.3191611,11.3714772 20,16 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
                 <polyline id="Path" stroke="url(#linearGradient-2)" stroke-width="5" points="5 16 20 30.5819491 35 16"></polyline>
             </g>
