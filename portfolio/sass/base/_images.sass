@@ -20,14 +20,22 @@
   justify-content: center
   flex-wrap: wrap
 
-.flex-nonwrap
+.flex-media
   display: flex
   justify-content: inherit
+@media screen and (max-width: 600px)
+  .flex-media
+    justify-content: space-between
 
 .media
-  max-height: 150px
   width: auto
-  padding-right: 64px
+  padding-right: 56px
+  display: block
+  height: auto
+@media screen and (max-width: 600px)
+  .media
+    padding-right: 24px
+
 
 .above-image
   margin-top: 16px
