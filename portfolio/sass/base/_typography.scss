@@ -3,6 +3,16 @@ h1, h2, h3, h4, h5, p {
   font-weight: 400;
 }
 
+
+h3 {
+  font-size: 24px;
+  line-height: 1.5em;
+  @media screen and (max-width: 660px) {
+    font-size: 17px;
+  }
+}
+
+
 h4 {
   font-size: 15px;
   line-height: 24px;
@@ -44,7 +54,7 @@ $bp-sizes: (
   )
 );
 
-$headings: (h6, h3, h2, h1);
+$headings: (h6, h7, h2, h1);
 
 
 @each $size, $data in $bp-sizes {
@@ -113,4 +123,11 @@ $headings: (h6, h3, h2, h1);
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+}
+
+
+
+.cover_subtext {
+  padding-left: 10%;
+  padding-right: 10%;
 }
