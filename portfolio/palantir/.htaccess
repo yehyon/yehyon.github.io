@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "My Protected Area"
+AuthName "palantir"
 AuthUserFile /Users/yehyonchung/Documents/yehyon/portfolio/.htpasswd
 Require valid-user
