@@ -4,6 +4,16 @@ h1, h2, h3, h4, h5, p {
 }
 
 
+h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  @media screen and (max-width: 660px) {
+    font-size: 24px;
+  }
+}
+
+
+
 h3 {
   font-size: 20px;
   line-height: 1.5em;
@@ -54,7 +64,7 @@ $bp-sizes: (
   )
 );
 
-$headings: (h6, h7, h2, h1);
+$headings: (h6, h7, h2, h8);
 
 
 @each $size, $data in $bp-sizes {
